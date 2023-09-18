@@ -1,20 +1,11 @@
-// import React from 'react'
-import { linearGradient } from "polished";
+// "use server"
+import Link from "next/link";
 
-const color1 = "#D434FE";
-const color2 = "#903AFF";
+const Navbar = ({ isDarkMode, handleDarkModeChange }) => {
 
-const mixedGradient = linearGradient({
-  colorStops: [
-    `${color1} 0%`,
-    `${color1} 50%`,
-    `${color2} 50%`,
-    `${color2} 100%`,
-  ],
-  toDirection: "to right",
-});
-
-const Navbar = () => {
+      const toggleDarkMode = () => {
+        handleDarkModeChange(!isDarkMode); // Invert the current state
+      };
   return (
     <nav className=" md:h-24 md:flex md:items-center md:justify-center sticky border-bottom">
       <div className=" md:flex md:justify-between items-center md:mx-[7%] md:w-full  ">
@@ -27,12 +18,16 @@ const Navbar = () => {
           <li>FAQs</li>
           <li>Contact</li>
         </ul>
-        <button
-          className="p-5 bg-[var(--mixed-gradient)] text-white rounded-md"
+        <Link
+          href="#"
+          className="bg-gradient-to-r from-pink-500 via-primary-color to-secondary-color px-12 py-2 rounded-lg "
           //   style={{ backgroundColor: mixedGradient }}
         >
           Register
-        </button>
+        </Link>
+        {/* <div>
+          <button onClick={toggleDarkMode}>Toggle Dark Mode</button>
+        </div> */}
       </div>
     </nav>
   );
