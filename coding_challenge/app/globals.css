@@ -39,3 +39,32 @@ body {
   bottom: 0;
   left: 0;
 }
+
+@keyframes blink {
+  0% {
+    opacity: 0.2; /* Start with low opacity */
+  }
+  50% {
+    opacity: 1; /* Fully visible at mid-point */
+  }
+  100% {
+    opacity: 0.2; /* Back to low opacity */
+  }
+}
+
+.blink-animation {
+  animation: blink 1.5s infinite; /* Animate with the blink keyframes */
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg); /* Start with no rotation */
+  }
+  100% {
+    transform: rotate(360deg); /* Rotate to 360 degrees (one full rotation) */
+  }
+}
+
+.rolling-animation {
+  animation: roll 5s linear infinite; /* Animate with the roll keyframes */
+}

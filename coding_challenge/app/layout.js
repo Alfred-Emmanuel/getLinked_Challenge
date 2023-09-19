@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
             src="/Purple-Lens-Flare-PNG.png"
             width={700}
             height={900}
-            className=" absolute md:top-4 md:left-20 md:z-[-1] md:opacity-50"
+            className="hidden md:block absolute md:top-4 md:left-20 md:z-[-1] md:opacity-50"
           />
           <div className="">{children}</div>
         </div>
