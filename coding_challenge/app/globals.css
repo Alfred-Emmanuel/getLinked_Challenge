@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: #d434fe;
+  --primary-color: #fe34c1;
   --secondary-color: #903aff;
   --background-color: #150e28;
   --mixed-gradient: linear-gradient(

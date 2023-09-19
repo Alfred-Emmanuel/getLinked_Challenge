@@ -29,7 +29,7 @@ const Navbar = ({ isDarkMode, handleDarkModeChange }) => {
           </ul>
           <Link
             href="#"
-            className="bg-gradient-to-r from-pink-500 via-primary-color to-secondary-color px-12 py-2 rounded-lg "
+            className="bg-gradient-to-r from-pink via-primary-color to-secondary-color px-12 py-2 rounded-lg "
           >
             Register
           </Link>

@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
             : "bg-light-mode-background-color text-light-mode-font-color"
         } ${inter.className}`}
       >
-        <div className="md-relative">
+        <div className="md-relative overflow-x-hidden">
           <Navbar
             isDarkMode={isDarkMode}
             handleDarkModeChange={handleDarkModeChange}
@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
             height={900}
             className="hidden md:block absolute md:top-4 md:left-20 md:z-[-1] md:opacity-50"
           />
-          <div className="">{children}</div>
+          <div className="md:pl-[7%]">{children}</div>
         </div>
       </body>
     </html>
