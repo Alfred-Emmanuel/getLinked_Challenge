@@ -10,7 +10,7 @@ const Navbar = ({ isDarkMode, handleDarkModeChange }) => {
     <nav className="hidden md:h-24 md:flex md:items-center md:justify-center sticky border-bottom">
       <div className=" md:flex md:justify-between items-center md:mx-[7%] md:w-full  ">
         <h2 className="text-2xl font-bold">
-          get<span className="text-[var(--primary-color)]">linked</span>
+          get<span className="text-secondary-color">linked</span>
         </h2>
         <div className="md:flex justify-between md:w-[50%] md:mr-[10%]">
           <ul className="md:flex md:w-[50%] md:justify-around md:items-center ">

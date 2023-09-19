@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
             height={900}
             className="hidden md:block absolute md:top-4 md:left-20 md:z-[-1] md:opacity-50"
           />
-          <div className="md:pl-[7%]">{children}</div>
+          <div className="pl-0 md:pl-[7%]">{children}</div>
         </div>
       </body>
     </html>

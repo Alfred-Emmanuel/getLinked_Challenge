@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import Typist from "react-typist";
+import FAQs from "@/components/FAQs";
 
 export default function Home() {
   return (
@@ -55,6 +56,11 @@ export default function Home() {
               height={650}
               className="w-[70%] mt-6 md:mt-0 md:w-[100%] mx-auto md:mx-0 z-10"
             />
+            {/* <span className="flex">
+              <h2 className="text-4xl">
+                getlinked Tech <br /> Hackathon 1.0
+              </h2><Image src="/chain.png" width={20} height={20}/>
+            </span> */}
             <p className="text-[0.7rem] w-[60%] text-center mx-auto pt-1 mb-6 md:pt-0 md:mx-0 md:text-left md:text-[1rem] md:mb-10 md:mt-5 md:w-[60%]">
               Participate in getLinked Tech Hackathon 2023 and stand a chance to
               win a big prize
@@ -97,7 +103,21 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="text-center mt-9 md:text-left md:mt-20 mb-10 mr-[6%]">
+      <section className=" text-center mt-9 md:text-left md:mt-20 mb-10 mr-[6%] relative">
+        <Image
+          src="/star(3).png"
+          alt="fourth star"
+          width={20}
+          height={20}
+          className=" absolute top-[20%] left-[10%] w-[3%] md:w-[1%] md:top-[33%] md:left-0 md:z-[10] md:opacity-90 blink-animation"
+        />
+        <Image
+          src="/star(4).png"
+          alt="fifth star"
+          width={20}
+          height={20}
+          className=" absolute top-[53%] left-[87%] w-[3%] md:w-[1%] md:top-[30%] md:left-[85%] md:z-[10] md:opacity-90 blink-animation"
+        />
         <div className="md:flex md:gap-[5%]">
           <div className=" p-10 md:p-0 md:w-[45%]">
             <Image
@@ -126,7 +146,35 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="text-center mt-9 md:text-left md:mt-20 mb-10 mr-[6%]">
+      <section className="text-center mt-9 md:text-left md:mt-20 mb-10 mr-[6%] relative">
+        <Image
+          src="/Purple-Lens-Flare-PNG.png"
+          alt="the globe"
+          width={100}
+          height={100}
+          className="w-[100%] -top-5 -left-[35%] absolute md:w-[50%] md:-top-[25%] md:-left-[10%] md:z-[10] opacity-70"
+        />
+        <Image
+          src="/Purple-Lens-Flare-PNG.png"
+          alt="the globe"
+          width={100}
+          height={100}
+          className=" w-[100%] top-[40%] left-[55%] absolute md:w-[50%] md:top-[30%] md:left-[82%] md:z-[10] opacity-80"
+        />
+        <Image
+          src="/star(1).png"
+          alt="fourth star"
+          width={20}
+          height={20}
+          className=" absolute top-[23%] left-[15%] w-[4%] md:w-[2%] md:top-[23%] md:left-[17%] md:z-[10] md:opacity-90 blink-animation"
+        />
+        <Image
+          src="/star.png"
+          alt="fifth star"
+          width={20}
+          height={20}
+          className=" absolute top-[58%] left-[78%] w-[4%] md:w-[2%] md:top-[70%] md:left-[50%] md:z-[10] md:opacity-90 blink-animation"
+        />
         <div className="flex flex-col md:flex-row md:gap-[2%]">
           <div className="order-2 md:order-1 md:w-[50%] flex items-center">
             <div>
@@ -155,7 +203,35 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="text-center mt-9 md:text-left md:mt-20 mb-10 mr-[6%]">
+      <section className="text-center mt-9 md:text-left md:mt-20 mb-10 mr-[6%] relative">
+        <Image
+          src="/Purple-Lens-Flare-PNG.png"
+          alt="the globe"
+          width={100}
+          height={100}
+          className="w-[100%] -top-5 -left-[35%] absolute md:w-[50%] md:top-[40%] md:-left-[15%] md:z-[10] opacity-70"
+        />
+        <Image
+          src="/Purple-Lens-Flare-PNG.png"
+          alt="the globe"
+          width={100}
+          height={100}
+          className=" w-[100%] top-[40%] left-[55%] absolute md:w-[50%] md:top-[73%] md:left-[78%] md:z-[10] opacity-80"
+        />
+        <Image
+          src="/star(1).png"
+          alt="fourth star"
+          width={20}
+          height={20}
+          className=" absolute top-[23%] left-[15%] w-[4%] md:w-[2%] md:top-[23%] md:left-[17%] md:z-[10] md:opacity-90 blink-animation"
+        />
+        <Image
+          src="/star.png"
+          alt="fifth star"
+          width={20}
+          height={20}
+          className=" absolute top-[58%] left-[78%] w-[4%] md:w-[2%] md:top-[70%] md:left-[50%] md:z-[10] md:opacity-90 blink-animation"
+        />
         <div className="md:flex md:gap-[5%]">
           <div className=" p-10 md:p-0 md:w-[45%] flex items-center ">
             <Image
@@ -213,6 +289,87 @@ export default function Home() {
                 Read More
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="text-center mt-20 md:text-left md:mt-32 mb-10 md:mr-[6%] relative">
+        <Image
+          src="/star(4).png"
+          alt="fifth star"
+          width={20}
+          height={20}
+          className=" absolute -top-[3%] left-[15%] w-[4%] md:w-[2%] md:-top-[12%] md:-left-[2%] md:z-[10] md:opacity-90 blink-animation"
+        />
+        <Image
+          src="/star(1).png"
+          alt="second star"
+          width={20}
+          height={20}
+          className=" absolute top-[78%] left-[12%] w-[4%] md:w-[2%] md:top-[57%] md:left-[48%] md:z-[10] md:opacity-90 blink-animation"
+        />
+        <Image
+          src="/star.png"
+          alt="first star"
+          width={20}
+          height={20}
+          className=" absolute top-[95%] left-[73%] w-[4%] md:w-[2%] md:top-[100%] md:left-[80%] md:z-[10] md:opacity-90 blink-animation"
+        />
+        <Image
+          src="/star(3).png"
+          alt="third star"
+          width={20}
+          height={20}
+          className=" absolute top-[60%] left-[45%] w-[4%] md:w-[1%] md:top-[15%] md:left-[56%] md:z-[10] md:opacity-90 blink-animation"
+        />
+        <Image
+          src="/star(3).png"
+          alt="third star"
+          width={20}
+          height={20}
+          className=" absolute top-[72%] left-[23%] w-[4%] md:w-[1%] md:-top-[5%] md:left-[70%] md:z-[10] md:opacity-90 blink-animation"
+        />
+        <Image
+          src="/middle-qm.png"
+          alt="question mark"
+          width={20}
+          height={20}
+          className=" absolute top-[58%] left-[37%] w-[5%] md:w-[3%] md:-top-[13%] md:left-[64%] md:z-[10] md:opacity-90 "
+        />{" "}
+        <Image
+          src="/left-qm.png"
+          alt="question mark"
+          width={20}
+          height={20}
+          className=" absolute top-[61%] left-[25%] w-[4%] md:w-[2%] md:-top-[2%] md:left-[55%] md:z-[10] md:opacity-90 "
+        />{" "}
+        <Image
+          src="/right-qm.png"
+          alt="question mark"
+          width={20}
+          height={20}
+          className=" absolute top-[61%] left-[54%] w-[4%] md:w-[2%] md:-top-[2%] md:left-[75%] md:z-[10] md:opacity-90 "
+        />
+        <div className="flex flex-col md:flex-row md:gap-[2%]">
+          <div className=" md:w-[50%] flex items-center">
+            <div>
+              <h1 className="text-[1.2rem] mb-4 font-bold md:text-3xl md:mb-5">
+                Frequently Asked <br />{" "}
+                <span className="text-primary-color">Questions</span>
+              </h1>
+              <p className="w-[80%] mb-5 mx-auto text-[0.78rem] md:text-[1rem] font-normal md:font-semibold md:mb-0 md:mx-0 md:w-[60%]">
+                We've got answers to the questions that you might want to ask
+                about <span className="font-bold">getlinked Hackathon 1.0</span>
+              </p>
+              <FAQs />
+            </div>
+          </div>
+          <div className="p-10 md:p-0 md:w-[48%]">
+            <Image
+              src="/man-thinking.png"
+              width={500}
+              height={500}
+              className="mx-auto md:mx-0"
+            />
           </div>
         </div>
       </section>
