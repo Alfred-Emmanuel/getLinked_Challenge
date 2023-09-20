@@ -1,10 +1,10 @@
 // "use server"
 import Link from "next/link";
 
-const Navbar = ({ isDarkMode, handleDarkModeChange }) => {
-  const toggleDarkMode = () => {
-    handleDarkModeChange(!isDarkMode); // Invert the current state
-  };
+const Navbar = () => {
+  // const toggleDarkMode = () => {
+  //   handleDarkModeChange(!isDarkMode); // Invert the current state
+  // };
 
   return (
     <nav className="hidden md:h-24 md:flex md:items-center md:justify-center sticky border-bottom">

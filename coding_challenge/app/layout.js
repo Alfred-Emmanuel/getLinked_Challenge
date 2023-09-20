@@ -1,9 +1,9 @@
-"use client";
+// "use client";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,44 +13,44 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  // const [isDarkMode, setIsDarkMode] = useState(true);
 
-  // Function to handle changes in isDarkMode
-  const handleDarkModeChange = value => {
-    setIsDarkMode(value);
-  };
+  // // Function to handle changes in isDarkMode
+  // const handleDarkModeChange = value => {
+  //   setIsDarkMode(value);
+  // };
 
-  useEffect(() => {
-    const savedMode = localStorage.getItem("darkMode");
-    if (savedMode === "true") {
-      setIsDarkMode(true);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const savedMode = localStorage.getItem("darkMode");
+  //   if (savedMode === "true") {
+  //     setIsDarkMode(true);
+  //   }
+  // }, []);
 
-  useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add("dark-mode");
-      localStorage.setItem("darkMode", "true");
-    } else {
-      document.documentElement.classList.remove("dark-mode");
-      localStorage.setItem("darkMode", "false");
-    }
-  }, [isDarkMode]);
+  // useEffect(() => {
+  //   if (isDarkMode) {
+  //     document.documentElement.classList.add("dark-mode");
+  //     localStorage.setItem("darkMode", "true");
+  //   } else {
+  //     document.documentElement.classList.remove("dark-mode");
+  //     localStorage.setItem("darkMode", "false");
+  //   }
+  // }, [isDarkMode]);
+
+  // ${isDarkMode
+  //   ? "bg-dark-mode-background-color text-dark-mode-font-color"
+  //   : "bg-light-mode-background-color text-light-mode-font-color" } ${inter.className}
 
 
   return (
     <html lang="en">
       <body
-        className={`text-white ${
-          isDarkMode
-            ? "bg-dark-mode-background-color text-dark-mode-font-color"
-            : "bg-light-mode-background-color text-light-mode-font-color"
-        } ${inter.className}`}
+        className={`text-white bg-dark-mode-background-color`}
       >
         <div className="md-relative overflow-x-hidden">
           <Navbar
-            isDarkMode={isDarkMode}
-            handleDarkModeChange={handleDarkModeChange}
+          // isDarkMode={isDarkMode}
+          // handleDarkModeChange={handleDarkModeChange}
           />
           <Image
             src="/Purple-Lens-Flare-PNG.png"
