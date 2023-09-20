@@ -68,3 +68,82 @@ body {
 .rolling-animation {
   animation: roll 5s linear infinite; /* Animate with the roll keyframes */
 }
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.animate-slideOut {
+  animation: slideOut 0.5s ease-in-out;
+}
+
+.hovered-link {
+  position: relative;
+}
+
+.hovered-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    bottom: 0;
+    left: 0;
+    padding-top:3px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+.hovered-link:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+@keyframes openToClose {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes closeToOpen {
+  0% {
+    transform: rotate(135deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+
+
+
