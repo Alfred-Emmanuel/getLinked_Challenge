@@ -37,11 +37,11 @@ const FAQs = () => {
   ];
 
   return (
-    <div className=" mt-8 md:mt-12">
+    <div className="mx-auto lg:mx-0 mt-8 lg:mt-12">
       {faqs.map((faq, index) => (
-        <div className="border-b border-primary-color pb-3 mb-3 w-[85%] mx-auto md:mx-0 md:w-[80%]" key={index}>
+        <div className="border-b border-primary-color pb-3 mb-3 w-[85%] mx-auto lg:mx-0 lg:w-[80%]" key={index}>
           <div className="flex justify-between">
-            <h3 className="text-[0.7rem] md:font-semibold md:text-[1rem] mb-2">{faq.question}</h3>
+            <h3 className="text-[0.7rem] lg:font-semibold lg:text-[1rem] mb-2">{faq.question}</h3>
             <button className="toggle-btn" onClick={() => toggleFAQ(index)}>
               <Image
                 src="/+.png"
@@ -55,7 +55,7 @@ const FAQs = () => {
             </button>
           </div>
           <div
-            className={`text-[0.7rem] md:text-[1rem] text-left ${
+            className={`text-[0.7rem] lg:text-[1rem] text-left ${
               activeIndex === index
                 ? "max-h-[1000px] opacity-100 transition-max-height ease-in duration-300 overflow-y-auto"
                 : "max-h-0 opacity-0 transition-max-height ease-out duration-300 overflow-y-hidden"

@@ -18,5 +18,18 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities(
+        {
+          ".border-gradient": {
+            "border-image": "linear-gradient(to right, #ff00cc, #3333ff)",
+            "border-image-slice": "1",
+            "border-radius": "0.5rem",
+          },
+        },
+        ["responsive", "hover"]
+      );
+    },
+  ],
 };

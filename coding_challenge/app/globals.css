@@ -14,10 +14,23 @@
   );
 }
 
+/* Enable smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
   padding: none;
   margin: none;
+}
+
+select:focus::-ms-value {
+  color: #000;
+  background-color: #fff;
+}
+select::-ms-expand {
+  display: none;
 }
 
 .border-bottom {
@@ -100,19 +113,19 @@ body {
 }
 
 .hovered-link::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    border-radius: 4px;
-    background-color: var(--primary-color);
-    bottom: 0;
-    left: 0;
-    padding-top:3px;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .3s ease-in-out;
-  }
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  bottom: 0;
+  left: 0;
+  padding-top: 3px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
 
 .hovered-link:hover::before {
   transform-origin: left;
@@ -127,7 +140,7 @@ body {
     transform: rotate(180deg);
   }
   100% {
-    transform: rotate(135deg);
+    transform: rotate(90deg);
   }
 }
 
@@ -143,7 +156,64 @@ body {
   }
 }
 
+@keyframes leftToRight {
+  from {
+    transform: translateX(-100%);
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+  }
+}
 
+@keyframes RightToLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
+@keyframes topToBottom {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
+@keyframes fadeZoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 
+.fade-zoom-in {
+  animation: fadeZoomIn 2s ease-in-out;
+}
+
+.animate-left-to-right {
+  animation: leftToRight 2s forwards;
+}
+
+.animate-right-to-left {
+  animation: RightToLeft 2s forwards;
+}
+
+.animate-top-to-bottom {
+  animation: topToBottom 2s forwards;
+}

@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`lg:h-24 lg:flex lg:items-center lg:justify-center fixed z-50 backdrop-blur-lg w-full -top-1 border-bottom transition-transform duration-300 transform ${
+      className={`lg:h-24 lg:flex lg:items-center lg:justify-center fixed z-50 backdrop-blur-lg w-full -top-1 transition-transform duration-300 transform ${
         isScrolled ? "-translate-y-full" : "translate-y-0"
       }`}
     >
@@ -49,7 +49,7 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <ul className="hidden lg:flex w-[50%] font-semibold text-[1rem] justify-around items-center">
             <li>
-              <Link href="#timeline" className="hovered-link">
+              <Link href="/#timeline" className="hovered-link">
                 Timeline
               </Link>
             </li>
@@ -59,26 +59,36 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="#faqs" className="hovered-link">
+              <Link href="/#faqs" className="hovered-link">
                 FAQs
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="hovered-link">
+              <Link
+                href="/contact"
+                className="hovered-link text-transparent bg-clip-text bg-gradient-to-r from-pink via-primary-color to-secondary-color bg-white"
+              >
                 Contact
               </Link>
             </li>
           </ul>
-          <Link
+          {/* <Link
             href="/register"
             className="moving bg-gradient-to-r from-pink via-primary-color to-secondary-color  px-12 py-2 rounded-lg "
           >
             Register
+          </Link> */}
+          <Link
+            href="/register"
+            className="relative inline-block px-12 py-2 rounded-lg border-2 border-gradient"
+          >
+            Register
+            <span className="absolute inset-0 border-2 rounded-lg pointer-events-none border-gradient"></span>
           </Link>
         </div>
       </div>
 
-      <div className="lg:hidden flex px-5 justify-between h-16 items-center">
+      {/* <div className="lg:hidden flex px-5 justify-between h-16 items-center">
         <h2 className="text-2xl font-bold">
           get<span className="text-primary-color">linked</span>
         </h2>
@@ -109,10 +119,10 @@ const Navbar = () => {
             )}
           </button>
         </div>
-      </div>
+      </div> */}
 
       {/* Mobile Navigation */}
-      {isMobileNavOpen && (
+      {/* {isMobileNavOpen && (
         <div
           className={`lg:hidden h-screen overflow-y-hidden py-4 px-8 w-full animate-${
             isMobileNavOpen ? "slideIn" : "slideOut"
@@ -120,7 +130,7 @@ const Navbar = () => {
         >
           <ul className="">
             <li className="mb-4">
-              <Link href="#timeline" onClick={closeMobileNav}>
+              <Link href="/#timeline" onClick={closeMobileNav}>
                 Timeline
               </Link>
             </li>
@@ -130,7 +140,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="mb-4">
-              <Link href="#faqs" onClick={closeMobileNav}>
+              <Link href="/#faqs" onClick={closeMobileNav}>
                 FAQs
               </Link>
             </li>
@@ -147,7 +157,7 @@ const Navbar = () => {
             Register
           </Link>
         </div>
-      )}
+      )} */}
     </nav>
   );
 };
