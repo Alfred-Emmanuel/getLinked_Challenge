@@ -49,73 +49,140 @@ export function RegistrationForm({ categoriesData }) {
           </div>
         </Fade>
         <Fade direction="up" duration={2000} triggerOnce={true}>
-          <h1 className="text-2xl tracking-widest mb-4 lg:tracking-normal lg:text-2xl lg:mb-5">
+          <h1 className="text-2xl tracking-widest mb-8 lg:tracking-normal lg:text-2xl lg:mb-5">
             Create your account
           </h1>
         </Fade>
 
         <div className="lg:flex gap-[6%]">
           <div className=" lg:w-[47%] ">
-            <Fade direction="up" duration={2000} triggerOnce={true}>
+            {/* <Fade direction="up" duration={2000} triggerOnce={true}>
               <label className="text-[0.9rem] font-semibold lg:text-[1rem]">
                 Team's Name
               </label>
-            </Fade>
-            <Fade direction="up" duration={2000} triggerOnce={true}>
-              <input
+            </Fade> */}
+            <Fade
+              direction="up"
+              duration={2000}
+              triggerOnce={true}
+              className="input-group"
+            >
+              <div className="input-group">
+                <input
+                  type="text"
+                  placeholder=""
+                  id="Team Name"
+                  name="team_name"
+                  required
+                  className="w-[100%] px-3 py-3 mb-7 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
+                />
+                <label htmlFor="Team Name" className=" label-field">
+                  Team Name
+                </label>
+              </div>
+              {/* <input
                 type="text"
                 name="team_name"
                 placeholder="Enter the name of your group"
                 className="w-[100%] lg:mt-2 lg:mb-5 mt-1 mb-3 px-5 py-2 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md "
-              />
+              /> */}
             </Fade>
           </div>
           <div className="lg:w-[47%]">
-            <Fade direction="up" duration={2000} triggerOnce={true}>
+            {/* <Fade direction="up" duration={2000} triggerOnce={true}>
               <label className="text-[0.9rem] font-semibold lg:text-[1rem]">
                 Phone Number
               </label>{" "}
-            </Fade>
+            </Fade> */}
 
-            <Fade direction="up" duration={2000} triggerOnce={true}>
-              <input
+            <Fade
+              direction="up"
+              duration={2000}
+              triggerOnce={true}
+              className="input-group"
+            >
+              <div className="input-group">
+                <input
+                  type="tel"
+                  placeholder=""
+                  id="Phone Number"
+                  name="phone_number"
+                  required
+                  className="w-[100%] px-3 py-3 mb-7 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
+                />
+                <label htmlFor="Phone Number" className=" label-field">
+                  Phone Number
+                </label>
+              </div>
+              {/* <input
                 type="tel"
                 name="phone_number"
                 placeholder="Enter your phone number"
                 className="w-[100%] lg:mt-2 lg:mb-5 mt-1 mb-3 px-5 py-2 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md "
-              />
+              /> */}
             </Fade>
           </div>
         </div>
         <div className="lg:flex gap-[6%]">
           <div className=" lg:w-[47%]">
-            <Fade direction="up" duration={2000} triggerOnce={true}>
+            {/* <Fade direction="up" duration={2000} triggerOnce={true}>
               <label className="text-[0.9rem] font-semibold lg:text-[1rem]">
                 Email
               </label>{" "}
-            </Fade>
-            <Fade direction="up" duration={2000} triggerOnce={true}>
-              <input
+            </Fade> */}
+            <Fade
+              direction="up"
+              duration={2000}
+              triggerOnce={true}
+              className="input-group"
+            >
+              <div className="input-group">
+                <input
+                  type="email"
+                  placeholder=""
+                  id="Email"
+                  name="email"
+                  required
+                  className="w-[100%] px-3 py-3 mb-7 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
+                />
+                <label htmlFor="Email" className=" label-field">
+                  Email
+                </label>
+              </div>
+              {/* <input
                 type="email"
                 name="email"
                 placeholder="Enter your email address"
                 className="mt-1 mb-3 w-[100%] lg:mt-2 lg:mb-5 px-5 py-2 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md "
-              />
+              /> */}
             </Fade>
           </div>
           <div className="lg:w-[47%]">
-            <Fade direction="up" duration={2000} triggerOnce={true}>
+            {/* <Fade direction="up" duration={2000} triggerOnce={true}>
               <label className="text-[0.9rem] font-semibold lg:text-[1rem]">
                 Project Topic
               </label>
-            </Fade>
-            <Fade direction="up" duration={2000} triggerOnce={true}>
-              <input
+            </Fade> */}
+            <Fade direction="up" duration={2000} triggerOnce={true} className="input-group">
+              <div className="input-group">
+                <input
+                  type="text"
+                  placeholder=""
+                  id="Project Topic"
+                  name="project_topic"
+                  required
+                  className="w-[100%] px-3 py-3 mb-7 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
+                />
+                <label htmlFor="Project Topic" className=" label-field">
+                  Project Topic
+                </label>
+              </div>
+              {/* <input
                 type="text"
                 name="project_topic"
                 placeholder="What is your group project about?"
                 className="mt-1 mb-3 w-[100%] lg:mt-2 lg:mb-5 px-5 py-2 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md "
-              />
+              /> */}
             </Fade>
           </div>
         </div>

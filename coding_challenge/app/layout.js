@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`text-white bg-dark-mode-background-color`}>
-        {/* <ScrollLine /> */}
+        <ScrollLine />
         <div className="">
           <Toaster position="top-right" />
 

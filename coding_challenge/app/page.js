@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
@@ -10,8 +11,6 @@ import Countdown from "@/components/Countdown";
 import Timeline from "@/components/Timeline";
 import Typewriter from "@/components/Typewriter";
 import LoadingComponent from "@/components/LoadingSkeleton";
-import ScrollLine from "@/components/ScrollLine";
-import { useEffect, useState } from "react";
 
 export default function Home() {
   const [pageLoadedBefore, setPageLoadedBefore] = useState(false);
@@ -35,7 +34,6 @@ export default function Home() {
     <>
       {showMainContent ? (
         <>
-          <ScrollLine />
           <div className="lg-relative overflow-x-hidden">
             <Navbar />
             <Image

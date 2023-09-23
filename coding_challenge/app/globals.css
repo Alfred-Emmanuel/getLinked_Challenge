@@ -160,30 +160,41 @@ select::-ms-expand {
   }
 }
 
+.input-group {
+  position: relative;
+  --x: 15px;
+  --y: 10px;
+}
 
-    .input-group {
-        position: relative;
-        --x: 15px;
-        --y: 10px;
-    }
+.input-field {
+  padding: var(--y) var(--x);
+}
 
-    .input-field{
-        padding: var(--y) var(--x);
-    }
+.label-field {
+  position: absolute;
+  left: var(--x);
+  top: calc(var(--y) - 3px);
+  border: 1px solid transparent;
+  padding: 0 6px;
+  transition: top 300ms, border 300ms, color 300ms;
+}
 
-    .label-field{
-        position: absolute;
-        left: var(--x);
-        top: calc(var(--y) - 3px);
-        border: 1px solid transparent;
-        padding: 0 6px;
-        transition: top 300ms, border 300ms, color 300ms;
-    }
+@media (max-width: 600px) {
+  /* CSS rules for mobile devices go here */
+  .input-field:focus ~ .label-field,
+.input-field:not(:placeholder-shown) ~ .label-field {
+  /* top: calc(var(--y) * -2.5); */
+  font-size: 14px;
+  /* color: pink; */
+  /* border: 1px solid white; */
+}
+}
 
-    .input-field:focus ~ .label-field,
-    .input-field:not(:placeholder-shown) ~ .label-field{
-        top: calc(var(--y) * -2.5);
-        /* font-size: 14px; */
-        /* color: pink; */
-        /* border: 1px solid white; */
-    }
+.input-field:focus ~ .label-field,
+.input-field:not(:placeholder-shown) ~ .label-field {
+  top: calc(var(--y) * -2.5);
+  font-weight: 700;
+  /* font-size: 14px; */
+  /* color: pink; */
+  /* border: 1px solid white; */
+}

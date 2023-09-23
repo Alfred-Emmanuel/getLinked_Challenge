@@ -51,22 +51,22 @@ const ContactForm = () => {
             </legend>
           </Fade>
           <Fade direction="up" duration={2000} triggerOnce={true}>
-            <legend className="lg:hidden text-[0.9rem] w-[80%] mb-5">
+            <legend className="lg:hidden text-[0.9rem] w-[80%] mb-10">
               Email us below about any questions related to our event
             </legend>
           </Fade>
         </div>
         <Fade direction="up" duration={2000} triggerOnce={true} className="input-group">
-          <div class="input-group">
+          <div className="input-group">
             <input
               type="text"
               placeholder=""
               id="First Name"
               name="first_name"
               required
-              className="w-[100%] px-3 py-3 lg:mb-7 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
+              className="w-[100%] px-3 py-3 mb-7 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
             />
-            <label htmlfor="First Name" className=" label-field">
+            <label htmlFor="First Name" className=" label-field">
               First Name
             </label>
           </div>
@@ -77,16 +77,16 @@ const ContactForm = () => {
           triggerOnce={true}
           className="input-group"
         >
-          <div class="input-group">
+          <div className="input-group">
             <input
               type="email"
               placeholder=""
               id="Email"
               name="email"
               required
-              className="w-[100%] px-3 py-3 lg:mb-7 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
+              className="w-[100%] px-3 py-3 mb-7 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
             />
-            <label htmlfor="Email" className="label-field">
+            <label htmlFor="Email" className="label-field">
               Email
             </label>
           </div>
@@ -97,16 +97,16 @@ const ContactForm = () => {
           triggerOnce={true}
           className="input-group"
         >
-          <div class="input-group">
+          <div className="input-group">
             <input
               type="tel"
               placeholder=""
               id="Phone Number"
               name="phone_number"
               required
-              className="w-[100%] px-3 py-3 lg:mb-7 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
+              className="w-[100%] px-3 py-3 mb-7 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
             />
-            <label htmlfor="First Name" className="label-field">
+            <label htmlFor="Phone Number" className="label-field">
               Phone Number
             </label>
           </div>
@@ -117,15 +117,15 @@ const ContactForm = () => {
           triggerOnce={true}
           className="input-group"
         >
-          <div class="input-group">
+          <div className="input-group">
             <textarea
               placeholder=""
               id="message"
               name="message"
               required
-              className="w-[100%] px-3 py-3 lg:mb-5 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
+              className="w-[100%] px-3 py-3 mb-5 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
             />
-            <label htmlfor="message" className="label-field">
+            <label htmlFor="message" className="label-field">
               Message
             </label>
           </div>

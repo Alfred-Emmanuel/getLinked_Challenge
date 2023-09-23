@@ -20,9 +20,6 @@ const ScrollLine = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  console.log(scrollPercentage);
-
   return (
     <div
       className="h-1 bg-white fixed top-0 left-0 z-50 transition-width duration-300"
