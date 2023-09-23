@@ -114,7 +114,7 @@ const Timeline = () => {
                 </div>
               </div>
               {/* right  */}
-              <div className="col-start-6 col-end-10 p-4 my-4 mr-auto lg:flex items-center justify-center hidden">
+              <div className="col-start-6 col-end-10 lg:p-4 my-4 mr-auto lg:flex items-center justify-center hidden">
                 <Slide direction="right" triggerOnce={true}>
                   <h3 className=" font-semibold text-lg mb-1 text-primary-color">
                     November 18, 2023
