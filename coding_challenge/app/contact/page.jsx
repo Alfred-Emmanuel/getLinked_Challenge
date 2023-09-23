@@ -7,7 +7,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Contact = () => {
   return (
-    <main className="md:w-[80%] lg md:absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:w-full">
+    <main className="md:w-[80%] md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 lg:w-full">
       <div className="lg:flex gap-[5%] lg:pt-10 lg:mx-[11%] relative">
         <Image
           src="/Purple-Lens-Flare-PNG.png"
