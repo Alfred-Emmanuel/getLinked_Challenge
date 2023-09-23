@@ -28,7 +28,7 @@ export function RegistrationForm({ categoriesData }) {
   return (
     <>
       <form
-        className="px-12 mt-10 md:mt-24 py-8 lg:mt-0 lg:px-16 lg:py-6 shadow-md lg:bg-white lg:bg-opacity-5 lg:border-primary-color lg:border-opacity-40"
+        className="px-12 mt-10 md:mt-40 py-8 lg:mt-0 lg:px-16 lg:py-6 shadow-md lg:bg-white lg:bg-opacity-5 lg:border-primary-color lg:border-opacity-40"
         action={clientAction}
         ref={ref}
       >
