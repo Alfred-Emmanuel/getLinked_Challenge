@@ -65,7 +65,7 @@ async function Register() {
         <div className="lg:w-[40%] px-12 lg:px-0 h-[40vh] lg:h-auto lg:pt-[7%] ">
           <Link href="/">
             <Image
-              className="lg:hidden md:inline-block md:pt-20 pt-5"
+              className="lg:hidden md:inline-block md:mt-32 pt-5"
               src="/back-btn.png"
               width={25}
               height={25}
@@ -79,7 +79,7 @@ async function Register() {
           </Fade>
           <div className="px-6 lg:px-0">
             <Fade direction="up" duration={2000} triggerOnce={true}>
-              <Image src="/man-in-chair.png" width={500} height={500} alt="" />
+              <Image src="/man-in-chair.png" width={450} height={450} alt="" />
             </Fade>
           </div>
         </div>

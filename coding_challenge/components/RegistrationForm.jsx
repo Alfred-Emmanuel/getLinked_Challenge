@@ -28,7 +28,7 @@ export function RegistrationForm({ categoriesData }) {
   return (
     <>
       <form
-        className="px-12 mt-10 md:mt-24 py-8 lg:mt-0 lg:px-16 lg:py-6 shadow-md lg:bg-white md:bg-opacity-5 lg:border-primary-color lg:border-opacity-40"
+        className="px-12 mt-10 md:mt-24 py-8 lg:mt-0 lg:px-16 lg:py-6 shadow-md lg:bg-white lg:bg-opacity-5 lg:border-primary-color lg:border-opacity-40"
         action={clientAction}
         ref={ref}
       >
@@ -39,7 +39,7 @@ export function RegistrationForm({ categoriesData }) {
         </Fade>
         <Fade direction="up" duration={2000} triggerOnce={true}>
           <div className="flex md:mb-4">
-            <legend className="md:text-[0.75rem]">
+            <legend className="md:text-[0.85rem] lg:text-[0.75rem]">
               Be part of this movement!
             </legend>
             <div className="flex justify-center w-[25%] mb-4 md:mb-5 lg:mb-0 ml-2 border-b-2 border-primary-color border-dotted md:w-[10%] lg:w-[12%]">
@@ -49,7 +49,7 @@ export function RegistrationForm({ categoriesData }) {
           </div>
         </Fade>
         <Fade direction="up" duration={2000} triggerOnce={true}>
-          <h1 className="text-2xl tracking-widest mb-8 lg:tracking-normal md:text-2xl md:mb-5">
+          <h1 className="text-2xl tracking-widest mb-8 lg:tracking-normal md:text-2xl md:mb-7">
             Create your account
           </h1>
         </Fade>

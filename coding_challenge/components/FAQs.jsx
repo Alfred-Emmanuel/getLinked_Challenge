@@ -48,7 +48,10 @@ const FAQs = () => {
           key={index}
         >
           <Fade duration={2000} direction="up" triggerOnce={true}>
-            <div className="flex justify-between">
+            <div
+              className="flex justify-between"
+              onClick={() => toggleFAQ(index)}
+            >
               <h3 className="text-[0.7rem] lg:font-semibold md:text-[1.2rem] lg:text-[1rem] mb-2">
                 {faq.question}
               </h3>
