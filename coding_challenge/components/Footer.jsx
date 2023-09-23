@@ -133,7 +133,7 @@ const Footer = () => {
               height={0}
               className="w-[5%] lg:w-[8%] lg:h-[5%]"
             />
-            <Link href="tel:+123456789">+234 679 81819</Link>
+            <Link href="tel:+23467981819">+234 679 81819</Link>
           </div>
           <div className="flex items-center gap-3 mt-2 lg:mt-0">
             <Image
