@@ -142,7 +142,7 @@ const Navbar = () => {
           </ul>
           <Link
             href="/register"
-            className="lg:hidden bg-gradient-to-r from-pink via-primary-color to-secondary-color px-12 py-2 rounded-lg "
+            className="lg:hidden bg-gradient-to-r from-pink via-primary-color to-secondary-color px-6 py-2 rounded-lg "
           >
             Register
           </Link>

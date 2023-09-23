@@ -6,9 +6,11 @@ const { pending } = useFormStatus();
 
   return (
     <button className="bg-gradient-to-r from-pink via-primary-color to-secondary-color  px-12 py-2 rounded-lg">
-      {pending
-        ? "Submitting..."
-        : "Submit"}
+      {pending ? (
+        <div className="animate-spin rounded-full h-7 w-7 border-t-4 border-b-4 border-black"></div>
+      ) : (
+        "Submit"
+      )}
     </button>
   );
 }

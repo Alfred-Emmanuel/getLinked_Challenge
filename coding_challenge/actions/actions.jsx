@@ -31,7 +31,7 @@ export async function submitContactForm(formData) {
       if (response.ok) {
         return { success: true };
       } else {
-        return { error: "Error submitting form" };
+        return { error: "Please type in the appropriate data into each field." };
       }
     } catch (error) {
       return { error: error.message };

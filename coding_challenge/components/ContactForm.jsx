@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import Button from "./button";
-import CustomModal from "./CustomModal";
+import CustomModal2 from "./CustomModal2";
 import toast from "react-hot-toast";
 
 const ContactForm = () => {
@@ -78,7 +78,7 @@ const ContactForm = () => {
         </div>
       </form>
       {formResult && formResult.success && (
-        <CustomModal isOpen={isModalOpen} closeModal={closeModal} />
+        <CustomModal2 isOpen={isModalOpen} closeModal={closeModal} />
       )}
     </>
   );
