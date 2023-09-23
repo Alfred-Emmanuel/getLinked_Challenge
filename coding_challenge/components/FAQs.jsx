@@ -32,11 +32,13 @@ const FAQs = () => {
     },
     {
       question: "What happens after the hackathon ends?",
-      answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repudiandae quam fuga at voluptas esse ut fugit numquam sint laboriosam temporibus animi, quisquam autem cupiditate quibusdam saepe similique voluptatem molestias",
+      answer:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repudiandae quam fuga at voluptas esse ut fugit numquam sint laboriosam temporibus animi, quisquam autem cupiditate quibusdam saepe similique voluptatem molestias",
     },
     {
       question: "What do i need to know before the hackathon starts?",
-      answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repudiandae quam fuga at voluptas esse ut fugit numquam sint laboriosam temporibus animi, quisquam autem cupiditate quibusdam saepe similique voluptatem molestias",
+      answer:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repudiandae quam fuga at voluptas esse ut fugit numquam sint laboriosam temporibus animi, quisquam autem cupiditate quibusdam saepe similique voluptatem molestias",
     },
   ];
 
@@ -48,10 +50,7 @@ const FAQs = () => {
           key={index}
         >
           <Fade duration={2000} direction="up" triggerOnce={true}>
-            <div
-              className="flex justify-between"
-              onClick={() => toggleFAQ(index)}
-            >
+            <div className="flex justify-between">
               <h3 className="text-[0.7rem] lg:font-semibold md:text-[1.2rem] lg:text-[1rem] mb-2">
                 {faq.question}
               </h3>
