@@ -64,7 +64,7 @@ const Footer = () => {
               </Link>
             </div>
             <div className="mb-2">
-              <Link href="faqs" className="hovered-link">
+              <Link href="#faqs" className="hovered-link">
                 FAQs
               </Link>
             </div>
@@ -133,7 +133,7 @@ const Footer = () => {
               height={0}
               className="w-[5%] lg:w-[8%] lg:h-[5%]"
             />
-            <p>+234 679 81819</p>
+            <Link href="tel:+123456789">+234 679 81819</Link>
           </div>
           <div className="flex items-center gap-3 mt-2 lg:mt-0">
             <Image

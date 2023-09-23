@@ -29,7 +29,7 @@ const LoadingComponent = () => {
   const typedElementRef = useRef(null);
   useEffect(() => {
     const options = {
-      strings: ["Your days of Job Hunting are Over"], // An array of strings to type out
+      strings: ["Your days of Job Hunting are Over!"],
       typeSpeed: 100, // Typing speed in milliseconds
     };
     const typed = new Typed(typedElementRef.current, options);
@@ -49,4 +49,3 @@ const LoadingComponent = () => {
 };
 
 export default LoadingComponent;
-

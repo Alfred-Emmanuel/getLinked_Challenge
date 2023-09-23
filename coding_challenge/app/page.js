@@ -41,7 +41,7 @@ export default function Home() {
             height={900}
             className="hidden lg:block absolute lg:top-4 lg:left-20 lg:z-[-1] lg:opacity-50  blink-animation"
           />
-          <main className="pl-0 lg:pl-[7%] mt-28 lg:mt-36">
+          <main className="pl-0 lg:pl-[7%] mt-28 lg:mt-28 ">
             <section className=" mt-8 lg:mt-0 text-center lg:text-left relative ">
               <Image
                 src="/Purple-Lens-Flare-PNG.png"
@@ -71,7 +71,7 @@ export default function Home() {
                 height={20}
                 className=" absolute top-[35%] left-[80%] w-[3%] lg:w-[1%] lg:top-[77%] lg:left-[30%] lg:z-[10] lg:opacity-90 blink-animation"
               />
-              <div className=" lg:text-right lg:pr-[15%] lg:mt-10">
+              <div className=" lg:text-right lg:pr-[15%] lg:mt-0">
                 <h2 className="lg:text-3xl lg:relative italic font-medium w-auto ">
                   <Typewriter />
                   <Image
@@ -79,7 +79,7 @@ export default function Home() {
                     height={50}
                     src="/curved-arch.png"
                     alt="Curved Arch"
-                    className="absolute w-24 left-[73%] lg:left-1/2 transform -translate-x-1/2 lg:w-48 lg:h-3 lg:ml-[42%]"
+                    className="absolute w-24 left-[73%] lg:left-1/2 transform -translate-x-1/2 lg:w-44 lg:h-3 lg:ml-[42%]"
                   />
                 </h2>
               </div>
@@ -133,7 +133,7 @@ export default function Home() {
                       alt="the globe"
                       width={900}
                       height={900}
-                      className="hidden lg:block top-1 absolute lg:-top-20 lg:left-10 lg:z-[10] lg:opacity-90"
+                      className="hidden lg:block top-1 absolute lg:-top-5 lg:left-20 lg:z-[10] lg:opacity-90"
                     />
                   </div>
                 </Fade>

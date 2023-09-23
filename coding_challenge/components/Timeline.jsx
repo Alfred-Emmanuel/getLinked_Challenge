@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { Slide } from "react-awesome-reveal";
 
 const Timeline = () => {
@@ -162,7 +162,7 @@ const Timeline = () => {
             {/* 5*/}
             <div className="flex flex-row-reverse lg:contents">
               <div className=" col-start-1 col-end-5 lg:p-4 my-4 ml-auto">
-                <Slide direction="left" triggerOnce={true} delay={600}>
+                <Slide direction="left" triggerOnce={true}>
                   <h3 className="font-semibold lg:text-lg mb-1 lg:text-right text-left text-primary-color">
                     Getlinked Hackathon 1.0 Officially Begins
                   </h3>
@@ -234,6 +234,6 @@ const Timeline = () => {
       </section>
     </>
   );
-}
+};
 
-export default Timeline
+export default Timeline;
