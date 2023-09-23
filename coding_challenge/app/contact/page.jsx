@@ -1,9 +1,9 @@
-"use client"
-
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
+import { Fade } from "react-awesome-reveal";
 
 const Contact = () => {
   return (
@@ -52,69 +52,37 @@ const Contact = () => {
           className=" absolute top-[20%] left-[80%] w-[3%] lg:w-[1%] lg:top-[85%] lg:left-[95%] lg:z-[10] lg:opacity-90 blink-animation"
         />
         <div className="lg:w-[40%] hidden lg:block">
-          <h2 className="lg:text-3xl text-primary-color font-semibold lg:mt-12 lg:mb-5">
-            Get in Touch
-          </h2>
-          <p className="lg:text-[1.1rem] lg:mb-3">
-            Contact <br /> information
-          </p>
-          <p className="lg:mb-3">
-            27, Alara Street <br /> Yaba 100012 <br /> Lagos State
-          </p>
-          <p className="lg:mb-3">Call us: 07067981819</p>
-          <p className="lg:mb-3">
-            We are open from Monday to Friday <br /> 08:00am - 35:00pm
-          </p>
-          <p className="text-primary-color lg:text-[1.1rem] lg:mb-5">
-            Share on
-          </p>
-          <div className="flex lg:gap-3 lg:items-center ">
-            <Link href="#">
-              <Image
-                src="/instagram.png"
-                alt="insta icon"
-                width={20}
-                height={30}
-                className=" hover:opacity-50"
-              />
-            </Link>
-            <Link href="#">
-              <Image
-                src="/twitter.png"
-                alt="twitter icon"
-                width={20}
-                height={30}
-                className=" hover:opacity-50"
-              />
-            </Link>
-            <Link href="#">
-              <Image
-                src="/facebook.png"
-                alt="facebook icon"
-                width={11}
-                height={10}
-                className=" hover:opacity-50"
-              />
-            </Link>
-            <Link href="#">
-              <Image
-                src="/linkedin.png"
-                alt="linkedin icon"
-                width={25}
-                height={30}
-                className=" hover:opacity-50"
-              />
-            </Link>
-          </div>
-        </div>
-        <div className="py-7 px-10 shadow-lg lg:bg-white lg:bg-opacity-5 lg:border-primary-color lg:border-opacity-40 lg:w-[48%] lg:px-20 lg:py-9">
-          <ContactForm />
-          <div className="lg:hidden text-center mt-5">
+          <Fade direction="up" duration={2000} triggerOnce={true}>
+            <h2 className="lg:text-3xl text-primary-color font-semibold lg:mt-12 lg:mb-5">
+              Get in Touch
+            </h2>
+          </Fade>
+          <Fade direction="up" duration={2000} triggerOnce={true}>
+            <p className="lg:text-[1.1rem] lg:mb-3">
+              Contact <br /> information
+            </p>
+          </Fade>
+          <Fade direction="up" duration={2000} triggerOnce={true}>
+            <p className="lg:mb-3">
+              27, Alara Street <br /> Yaba 100012 <br /> Lagos State
+            </p>
+          </Fade>
+          <Fade direction="up" duration={2000} triggerOnce={true}>
+            <p className="lg:mb-3">Call us: 07067981819</p>
+          </Fade>
+          <Fade direction="up" duration={2000} triggerOnce={true}>
+            <p className="lg:mb-3">
+              We are open from Monday to Friday <br /> 08:00am - 35:00pm
+            </p>
+          </Fade>
+          <Fade direction="up" duration={2000} triggerOnce={true}>
             <p className="text-primary-color lg:text-[1.1rem] lg:mb-5">
               Share on
             </p>
-            <div className="flex gap-3 justify-center items-center mt-3 ">
-              <Link href="#">
+          </Fade>
+          <Fade direction="up" duration={2000} triggerOnce={true}>
+            <div className="flex lg:gap-3 lg:items-center ">
+              <Link href="#" className="cursor-not-allowed">
                 <Image
                   src="/instagram.png"
                   alt="insta icon"
@@ -123,7 +91,7 @@ const Contact = () => {
                   className=" hover:opacity-50"
                 />
               </Link>
-              <Link href="#">
+              <Link href="https://twitter.com/getLinkedai" target="_blank">
                 <Image
                   src="/twitter.png"
                   alt="twitter icon"
@@ -132,7 +100,7 @@ const Contact = () => {
                   className=" hover:opacity-50"
                 />
               </Link>
-              <Link href="#">
+              <Link href="#" className="cursor-not-allowed">
                 <Image
                   src="/facebook.png"
                   alt="facebook icon"
@@ -141,7 +109,10 @@ const Contact = () => {
                   className=" hover:opacity-50"
                 />
               </Link>
-              <Link href="#">
+              <Link
+                href="https://www.linkedin.com/company/getlinked-ai/"
+                target="_blank"
+              >
                 <Image
                   src="/linkedin.png"
                   alt="linkedin icon"
@@ -151,6 +122,56 @@ const Contact = () => {
                 />
               </Link>
             </div>
+          </Fade>
+        </div>
+        <div className="py-7 px-10 shadow-lg lg:bg-white lg:bg-opacity-5 lg:border-primary-color lg:border-opacity-40 lg:w-[48%] lg:px-20 lg:py-9">
+          <ContactForm />
+          <div className="lg:hidden text-center mt-5">
+            <Fade direction="up" duration={2000} triggerOnce={true}>
+              <p className="text-primary-color lg:text-[1.1rem] lg:mb-5">
+                Share on
+              </p>
+            </Fade>
+            <Fade direction="up" duration={2000} triggerOnce={true}>
+              <div className="flex gap-3 justify-center items-center mt-3 ">
+                <Link href="#">
+                  <Image
+                    src="/instagram.png"
+                    alt="insta icon"
+                    width={20}
+                    height={30}
+                    className=" hover:opacity-50"
+                  />
+                </Link>
+                <Link href="#">
+                  <Image
+                    src="/twitter.png"
+                    alt="twitter icon"
+                    width={20}
+                    height={30}
+                    className=" hover:opacity-50"
+                  />
+                </Link>
+                <Link href="#">
+                  <Image
+                    src="/facebook.png"
+                    alt="facebook icon"
+                    width={11}
+                    height={10}
+                    className=" hover:opacity-50"
+                  />
+                </Link>
+                <Link href="#">
+                  <Image
+                    src="/linkedin.png"
+                    alt="linkedin icon"
+                    width={25}
+                    height={30}
+                    className=" hover:opacity-50"
+                  />
+                </Link>
+              </div>
+            </Fade>
           </div>
         </div>
       </div>

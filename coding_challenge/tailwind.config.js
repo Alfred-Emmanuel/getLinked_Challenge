@@ -16,6 +16,10 @@ module.exports = {
         "light-mode-font-color": "#000",
         "dark-mode-font-color": "#FFF",
       },
+      fontFamily: {
+        unica: ["Unica One", "sans"],
+        // montserrat: ["montserrat", "sans"],
+      },
     },
   },
   plugins: [

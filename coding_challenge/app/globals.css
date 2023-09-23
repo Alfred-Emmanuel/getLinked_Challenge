@@ -238,4 +238,3 @@ select::-ms-expand {
 .animate-slide-in-from-bottom {
   animation: slideInFromBottom 2s ease-out; /* Adjust duration and timing function as needed */
 }
-

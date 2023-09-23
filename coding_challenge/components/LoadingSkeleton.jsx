@@ -42,7 +42,7 @@ const LoadingComponent = () => {
     <div className="flex justify-center items-center h-screen">
       <span
         ref={typedElementRef}
-        className="text-4xl font-bold text-center border-4 border-gradient p-4"
+        className="lg:text-4xl font-bold text-center border-4 border-gradient lg:p-4 p-2"
       ></span>
     </div>
   );

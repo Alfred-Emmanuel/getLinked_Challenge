@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import Image from "next/image";
+import { Fade } from "react-awesome-reveal";
 
 const FAQs = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -39,21 +40,28 @@ const FAQs = () => {
   return (
     <div className="mx-auto lg:mx-0 mt-8 lg:mt-12">
       {faqs.map((faq, index) => (
-        <div className="border-b border-primary-color pb-3 mb-3 w-[85%] mx-auto lg:mx-0 lg:w-[80%]" key={index}>
-          <div className="flex justify-between">
-            <h3 className="text-[0.7rem] lg:font-semibold lg:text-[1rem] mb-2">{faq.question}</h3>
-            <button className="toggle-btn" onClick={() => toggleFAQ(index)}>
-              <Image
-                src="/+.png"
-                width={15}
-                height={15}
-                alt="plus"
-                className={`transform ${
-                  activeIndex === index ? "rotate-45" : ""
-                } transition-transform`}
-              />
-            </button>
-          </div>
+        <div
+          className="border-b border-primary-color pb-3 mb-3 w-[85%] mx-auto lg:mx-0 lg:w-[80%]"
+          key={index}
+        >
+          <Fade duration={2000} direction="up" triggerOnce={true}>
+            <div className="flex justify-between">
+              <h3 className="text-[0.7rem] lg:font-semibold lg:text-[1rem] mb-2">
+                {faq.question}
+              </h3>
+              <button className="toggle-btn" onClick={() => toggleFAQ(index)}>
+                <Image
+                  src="/+.png"
+                  width={15}
+                  height={15}
+                  alt="plus"
+                  className={`transform ${
+                    activeIndex === index ? "rotate-45" : ""
+                  } transition-transform`}
+                />
+              </button>
+            </div>
+          </Fade>
           <div
             className={`text-[0.7rem] lg:text-[1rem] text-left ${
               activeIndex === index

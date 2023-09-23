@@ -6,6 +6,7 @@ import { useRef, useState } from "react";
 import Button from "./button";
 import CustomModal2 from "./CustomModal2";
 import toast from "react-hot-toast";
+import { Fade } from "react-awesome-reveal";
 
 const ContactForm = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -39,43 +40,60 @@ const ContactForm = () => {
           />
         </Link>
         <div className="lg:mb-7">
-          <legend className="text-primary-color text-[1.1rem] font-semibold">
-            Questions or you need assistance?
-          </legend>
-          <legend className="text-primary-color mb-4 lg:mb-0 text-[1.1rem] font-semibold">
-            Let us know about it!
-          </legend>
-          <legend className="lg:hidden text-[0.9rem] w-[80%] mb-4">
-            Email us below about any questions related to our event
-          </legend>
+          <Fade direction="up" duration={2000} triggerOnce={true}>
+            <legend className="text-primary-color text-[1.1rem] font-semibold">
+              Questions or you need assistance?
+            </legend>
+          </Fade>
+          <Fade direction="up" duration={2000} triggerOnce={true}>
+            <legend className="text-primary-color mb-4 lg:mb-0 text-[1.1rem] font-semibold">
+              Let us know about it!
+            </legend>
+          </Fade>
+          <Fade direction="up" duration={2000} triggerOnce={true}>
+            <legend className="lg:hidden text-[0.9rem] w-[80%] mb-4">
+              Email us below about any questions related to our event
+            </legend>
+          </Fade>
         </div>
-        <input
-          placeholder="First name"
-          name="first_name"
-          required
-          className="w-[100%] px-3 py-3 mb-5 lg:px-3 text-white lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md "
-        />
-        <input
-          placeholder="Mail"
-          name="email"
-          required
-          className="w-[100%] px-3 py-3 mb-5 lg:px-3 text-white lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md "
-        />
-        <input
-          placeholder="Phone number"
-          name="phone_number"
-          required
-          className="w-[100%] px-3 py-3 mb-5 lg:px-3 text-white lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md "
-        />
-        <textarea
-          placeholder="Message"
-          name="message"
-          required
-          className="w-[100%] px-3 py-3 lg:mb-5 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md "
-        />
-        <div className="flex justify-center items-center mt-5 lg:pb-0 ">
-          <Button />
-        </div>
+        <Fade direction="up" duration={2000} triggerOnce={true}>
+          <input
+            placeholder="First name"
+            name="first_name"
+            required
+            className="w-[100%] px-3 py-3 mb-5 lg:px-3 text-white lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md "
+          />
+        </Fade>
+        <Fade direction="up" duration={2000} triggerOnce={true}>
+          <input
+            placeholder="Mail"
+            name="email"
+            required
+            className="w-[100%] px-3 py-3 mb-5 lg:px-3 text-white lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md "
+          />
+        </Fade>
+        <Fade direction="up" duration={2000} triggerOnce={true}>
+          <input
+            placeholder="Phone number"
+            name="phone_number"
+            required
+            className="w-[100%] px-3 py-3 mb-5 lg:px-3 text-white lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md "
+          />
+        </Fade>
+        <Fade direction="up" duration={2000} triggerOnce={true}>
+          <textarea
+            placeholder="Message"
+            name="message"
+            required
+            className="w-[100%] px-3 py-3 lg:mb-5 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md "
+          />
+        </Fade>
+
+        <Fade direction="up" duration={2000} triggerOnce={true}>
+          <div className="flex justify-center items-center mt-5 lg:pb-0 ">
+            <Button />
+          </div>
+        </Fade>
       </form>
       {formResult && formResult.success && (
         <CustomModal2 isOpen={isModalOpen} closeModal={closeModal} />

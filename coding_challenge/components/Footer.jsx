@@ -78,17 +78,17 @@ const Footer = () => {
             <h3 className="text-[1.1rem] text-primary-color lg:text-[1.1rem]">
               Follow Us:
             </h3>
-            <div className="flex items-center gap-5">
-              <Link href="#">
+            <div className="flex items-center gap-5 ">
+              <Link href="#" className="cursor-not-allowed">
                 <Image
                   src="/instagram.png"
                   alt="insta icon"
                   width={20}
                   height={30}
-                  className=" hover:opacity-50"
+                  className=" hover:opacity-50 "
                 />
               </Link>
-              <Link href="#">
+              <Link href="https://twitter.com/getLinkedai" target="_blank">
                 <Image
                   src="/twitter.png"
                   alt="twitter icon"
@@ -97,7 +97,7 @@ const Footer = () => {
                   className=" hover:opacity-50"
                 />
               </Link>
-              <Link href="#">
+              <Link href="#" className="cursor-not-allowed">
                 <Image
                   src="/facebook.png"
                   alt="facebook icon"
@@ -106,7 +106,10 @@ const Footer = () => {
                   className=" hover:opacity-50"
                 />
               </Link>
-              <Link href="#">
+              <Link
+                href="https://www.linkedin.com/company/getlinked-ai/"
+                target="_blank"
+              >
                 <Image
                   src="/linkedin.png"
                   alt="linkedin icon"
@@ -146,7 +149,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <h5 className="mt-4 lg:mt-0  text-center">
+      <h5 className="mt-4 lg:mt-0 text-center text-[0.8rem] lg:text-[1rem]">
         All rights reserved. &copy; getlinked Ltd.
       </h5>
     </footer>
