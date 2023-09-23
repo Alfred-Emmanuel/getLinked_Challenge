@@ -15,7 +15,8 @@ export default function ContactLayout({ children }) {
     <div className="">
       <Navbar />
       <section className="lg:mt-24">
-        <main className="">{children}</main>
+        <main className="">
+          {children}</main>
       </section>
     </div>
   );

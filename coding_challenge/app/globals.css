@@ -69,6 +69,10 @@ select::-ms-expand {
   animation: blink 1.5s infinite; /* Animate with the blink keyframes */
 }
 
+.blink-later-animation {
+  animation: blink 3s infinite; /* Animate with the blink keyframes */
+}
+
 @keyframes roll {
   0% {
     transform: rotate(0deg); /* Start with no rotation */

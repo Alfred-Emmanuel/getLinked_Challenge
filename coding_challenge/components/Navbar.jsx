@@ -42,9 +42,9 @@ const Navbar = () => {
       }`}
     >
       <div className=" hidden lg:flex justify-between items-center lg:mx-[7%] lg:w-full">
-        <h2 className="text-3xl font-bold">
+        <Link href="/" className="text-3xl font-bold">
           get<span className="text-primary-color">linked</span>
-        </h2>
+        </Link>
         <div className="lg:flex justify-end gap-[20%] items-center lg:w-[50%] lg:mr-[2%]">
           {/* Desktop Navigation */}
           <ul className="hidden lg:flex w-[50%] font-semibold text-[1rem] justify-around items-center">
@@ -79,9 +79,9 @@ const Navbar = () => {
       </div>
 
       <div className="lg:hidden flex px-5 justify-between h-16 items-center">
-        <h2 className="text-2xl font-bold">
+        <Link href="/" className="text-2xl font-bold">
           get<span className="text-primary-color">linked</span>
-        </h2>
+        </Link>
 
         <div className="lg:hidden">
           <button

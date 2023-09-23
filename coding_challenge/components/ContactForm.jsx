@@ -2,17 +2,27 @@
 import { submitContactForm } from "@/actions/actions";
 import Link from "next/link";
 import Image from "next/image";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Button from "./button";
+import CustomModal from "./CustomModal";
+import toast from "react-hot-toast";
 
 const ContactForm = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [formResult, setFormResult] = useState(null);
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   const ref = useRef(null);
 
   async function clientAction(formData) {
-    // ref.current?.reset();
+    ref.current?.reset();
     const result = await submitContactForm(formData);
+    setFormResult(result);
     if (result?.error) {
-    //   alert(result.error);
+      toast.error(result.error);
+    } else {
+      setIsModalOpen(true);
     }
   }
   return (
@@ -31,7 +41,6 @@ const ContactForm = () => {
         <div className="lg:mb-7">
           <legend className="text-primary-color text-[1.1rem] font-semibold">
             Questions or you need assistance?
-     
           </legend>
           <legend className="text-primary-color mb-4 lg:mb-0 text-[1.1rem] font-semibold">
             Let us know about it!
@@ -68,6 +77,9 @@ const ContactForm = () => {
           <Button />
         </div>
       </form>
+      {formResult && formResult.success && (
+        <CustomModal isOpen={isModalOpen} closeModal={closeModal} />
+      )}
     </>
   );
 };

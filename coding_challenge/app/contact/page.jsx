@@ -14,7 +14,7 @@ const Contact = () => {
           alt="the globe"
           width={100}
           height={100}
-          className=" top-[10%] -left-[40%] w-[90%] lg:block absolute lg:w-[42%] lg:top-[47%] lg:left-[72%] lg:z-[10] opacity-80 blink-animation"
+          className=" top-[10%] -left-[40%] w-[90%] lg:block absolute lg:w-[42%] lg:top-[47%] lg:left-[72%] lg:z-[10] opacity-80 blink-later-animation"
         />
         <Image
           src="/Purple-Lens-Flare-PNG.png"

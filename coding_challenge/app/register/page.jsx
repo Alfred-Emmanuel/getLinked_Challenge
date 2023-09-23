@@ -1,55 +1,13 @@
+// "use client"
 import Image from "next/image";
 import Link from "next/link";
-import getCategories from "../lib/getCategories";
-import { revalidatePath } from "next/cache";
+import RegistrationForm from "@/components/RegistrationForm";
+import getCategories from "@/components/getCategories";
+// import { revalidatePath } from "next/cache";
 
 async function Register() {
   const categoriesData = getCategories();
   const categories = await categoriesData;
-
-  const submitForm = async formData => {
-    "use server";
-
-    const email = formData.get("email")?.toString();
-    const phone_number = formData.get("phone_number")?.toString();
-    const team_name = formData.get("team_name")?.toString();
-    const group_size = formData.get("group_size")?.toString();
-    const project_topic = formData.get("project_topic")?.toString();
-    const category = formData.get("category")?.toString();
-    const privacy_policy_accepted = formData
-      .get("privacy_policy_accepted")
-      ?.toString();
-
-    if (
-      !email ||
-      !phone_number ||
-      !team_name ||
-      !group_size ||
-      !project_topic ||
-      !category ||
-      !privacy_policy_accepted
-    )
-      return;
-
-    const formFields = {
-      email,
-      phone_number,
-      team_name,
-      group_size,
-      project_topic,
-      category,
-      privacy_policy_accepted,
-    };
-
-    await fetch("https://backend.getlinked.ai/hackathon/registration", {
-      method: "POST",
-      body: JSON.stringify(formFields),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-    revalidatePath("/register");
-  };
 
   return (
     <main>
@@ -59,14 +17,14 @@ async function Register() {
           alt="the globe"
           width={100}
           height={100}
-          className=" hidden lg:block absolute lg:w-[50%] lg:-top-[2%] lg:-left-[30%] lg:z-[10] opacity-80 blink-animation"
+          className=" hidden lg:block absolute lg:w-[50%] lg:-top-[2%] lg:-left-[30%] lg:z-[10] opacity-80 blink-later-animation"
         />
         <Image
           src="/Purple-Lens-Flare-PNG.png"
           alt="the globe"
           width={100}
           height={100}
-          className=" top-[10%] -left-[40%] w-[90%] lg:block absolute lg:w-[42%] lg:top-[38%] lg:left-[72%] lg:z-[10] opacity-80 blink-animation"
+          className=" top-[10%] -left-[40%] w-[90%] lg:block absolute lg:w-[40%] lg:top-[58%] lg:left-[72%] lg:h-[250px] lg:z-[10] opacity-80 blink-animation"
         />
         <Image
           src="/star(4).png"
@@ -121,8 +79,8 @@ async function Register() {
             <Image src="/man-in-chair.png" width={500} height={500} alt="" />
           </div>
         </div>
-        <div className=" lg:w-[54%] ">
-          <form
+        <div className=" lg:w-[54%] relative lg:z-50 ">
+          {/* <form
             className="px-12 mt-10 py-8 lg:mt-0 lg:px-16 lg:py-8 shadow-md lg:bg-white lg:bg-opacity-5 lg:border-primary-color lg:border-opacity-40"
             action={submitForm}
           >
@@ -266,7 +224,8 @@ async function Register() {
                 Submit
               </button>
             </div>
-          </form>
+          </form> */}
+          <RegistrationForm categoriesData={categories}/>
         </div>
       </div>
     </main>

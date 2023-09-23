@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-import Typist from "react-typist";
+// import Typist from "react-typist";
 import FAQs from "@/components/FAQs";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -227,9 +227,9 @@ export default function Home() {
           />
           <div className=" lg:text-right lg:pr-[15%] lg:mt-10">
             <h2 className="lg:text-3xl lg:relative italic font-medium w-auto ">
-              <Typist avgTypingDelay={100}>
+              <h2>
               Igniting a Revolution in HR Innovation
-            </Typist>
+            </h2>
               <Image
                 width={50}
                 height={50}

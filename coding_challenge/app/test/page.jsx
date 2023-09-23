@@ -1,6 +1,6 @@
 import React from "react";
 import { revalidateTag } from "next/cache";
-import getCategories from "../lib/getCategories";
+import getCategories from "../../components/getCategories";
 import Image from "next/image";
 
 async function Test() {

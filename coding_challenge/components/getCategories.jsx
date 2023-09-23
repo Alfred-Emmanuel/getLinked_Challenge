@@ -1,3 +1,5 @@
+
+
 export default async function getCategories() {
     const res = await fetch(
       "https://backend.getlinked.ai/hackathon/categories-list"
@@ -7,6 +9,6 @@ export default async function getCategories() {
       throw new Error("Failed to fetch categories");
     }
 
-    return res.json();
-    
+    const categories = res.json();
+    return categories;
 }
