@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`lg:h-24 lg:flex lg:items-center lg:justify-center fixed z-50 backdrop-blur-lg w-full -top-1 border-bottom transition-transform duration-300 transform ${
+      className={`lg:h-24 lg:flex lg:items-center lg:justify-center fixed z-40 backdrop-blur-lg w-full -top-1 border-bottom transition-transform duration-300 transform ${
         isScrolled ? "-translate-y-full" : "translate-y-0"
       }`}
     >
@@ -114,27 +114,27 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       {isMobileNavOpen && (
         <div
-          className={`lg:hidden h-screen overflow-y-hidden py-4 px-8 w-full animate-${
+          className={`lg:hidden h-screen overflow-y-hidden relative z-50 py-4 px-8 w-full animate-${
             isMobileNavOpen ? "slideIn" : "slideOut"
           } `}
         >
-          <ul className="">
-            <li className="mb-4">
+          <ul className=" md:mb-14">
+            <li className="mb-4 md:text-[1.3rem]">
               <Link href="#timeline" onClick={closeMobileNav}>
                 Timeline
               </Link>
             </li>
-            <li className="mb-4">
+            <li className="mb-4 md:text-[1.3rem]">
               <Link href="/" onClick={closeMobileNav}>
                 Overview
               </Link>
             </li>
-            <li className="mb-4">
+            <li className="mb-4 md:text-[1.3rem]">
               <Link href="#faqs" onClick={closeMobileNav}>
                 FAQs
               </Link>
             </li>
-            <li className="mb-4">
+            <li className="mb-4 md:text-[1.3rem]">
               <Link href="/contact" onClick={closeMobileNav}>
                 Contact
               </Link>
@@ -142,7 +142,7 @@ const Navbar = () => {
           </ul>
           <Link
             href="/register"
-            className="lg:hidden bg-gradient-to-r from-pink via-primary-color to-secondary-color px-6 py-2 rounded-lg "
+            className="lg:hidden bg-gradient-to-r from-pink via-primary-color to-secondary-color px-6 py-2 md:px-12 md:py-4 rounded-lg "
           >
             Register
           </Link>

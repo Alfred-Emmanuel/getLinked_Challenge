@@ -28,28 +28,28 @@ export function RegistrationForm({ categoriesData }) {
   return (
     <>
       <form
-        className="px-12 mt-10 py-8 lg:mt-0 lg:px-16 lg:py-6 shadow-md lg:bg-white lg:bg-opacity-5 lg:border-primary-color lg:border-opacity-40"
+        className="px-12 mt-10 md:mt-24 py-8 lg:mt-0 lg:px-16 lg:py-6 shadow-md lg:bg-white md:bg-opacity-5 lg:border-primary-color lg:border-opacity-40"
         action={clientAction}
         ref={ref}
       >
         <Fade direction="up" duration={2000} triggerOnce={true}>
-          <legend className="hidden lg:block lg:mb-7 lg:text-3xl lg:font-semibold text-primary-color">
+          <legend className="hidden lg:block lg:mb-7 md:text-3xl lg:font-semibold text-primary-color">
             Register
           </legend>
         </Fade>
         <Fade direction="up" duration={2000} triggerOnce={true}>
-          <div className="flex lg:mb-4">
-            <legend className="lg:text-[0.75rem]">
+          <div className="flex md:mb-4">
+            <legend className="md:text-[0.75rem]">
               Be part of this movement!
             </legend>
-            <div className="flex justify-center w-[25%] mb-4 lg:mb-0 ml-2 border-b-2 border-primary-color border-dotted lg:w-[12%]">
+            <div className="flex justify-center w-[25%] mb-4 md:mb-5 lg:mb-0 ml-2 border-b-2 border-primary-color border-dotted md:w-[10%] lg:w-[12%]">
               <Image src="/man-walking.png" alt="" width={20} height={20} />
               <Image src="/woman-walking.png" alt="" width={20} height={20} />
             </div>
           </div>
         </Fade>
         <Fade direction="up" duration={2000} triggerOnce={true}>
-          <h1 className="text-2xl tracking-widest mb-8 lg:tracking-normal lg:text-2xl lg:mb-5">
+          <h1 className="text-2xl tracking-widest mb-8 lg:tracking-normal md:text-2xl md:mb-5">
             Create your account
           </h1>
         </Fade>
@@ -74,7 +74,7 @@ export function RegistrationForm({ categoriesData }) {
                   id="Team Name"
                   name="team_name"
                   required
-                  className="w-[100%] px-3 py-3 mb-7 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
+                  className="w-[100%] px-3 py-3 mb-7 md:py-4 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
                 />
                 <label htmlFor="Team Name" className=" label-field">
                   Team Name
@@ -108,7 +108,7 @@ export function RegistrationForm({ categoriesData }) {
                   id="Phone Number"
                   name="phone_number"
                   required
-                  className="w-[100%] px-3 py-3 mb-7 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
+                  className="w-[100%] px-3 py-3 mb-7 md:py-4 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
                 />
                 <label htmlFor="Phone Number" className=" label-field">
                   Phone Number
@@ -143,7 +143,7 @@ export function RegistrationForm({ categoriesData }) {
                   id="Email"
                   name="email"
                   required
-                  className="w-[100%] px-3 py-3 mb-7 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
+                  className="w-[100%] px-3 py-3 mb-7 md:py-4 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
                 />
                 <label htmlFor="Email" className=" label-field">
                   Email
@@ -163,7 +163,12 @@ export function RegistrationForm({ categoriesData }) {
                 Project Topic
               </label>
             </Fade> */}
-            <Fade direction="up" duration={2000} triggerOnce={true} className="input-group">
+            <Fade
+              direction="up"
+              duration={2000}
+              triggerOnce={true}
+              className="input-group"
+            >
               <div className="input-group">
                 <input
                   type="text"
@@ -171,7 +176,7 @@ export function RegistrationForm({ categoriesData }) {
                   id="Project Topic"
                   name="project_topic"
                   required
-                  className="w-[100%] px-3 py-3 mb-7 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
+                  className="w-[100%] px-3 py-3 mb-7 md:py-4 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
                 />
                 <label htmlFor="Project Topic" className=" label-field">
                   Project Topic
@@ -186,8 +191,8 @@ export function RegistrationForm({ categoriesData }) {
             </Fade>
           </div>
         </div>
-        <div className="flex gap-[6%]">
-          <div className="lg:w-[47%]">
+        <div className="flex gap-[6%] md:justify-between lg:justify-normal">
+          <div className="lg:w-[47%] md:w-[50%] ">
             <Fade direction="up" duration={2000} triggerOnce={true}>
               <label className="text-[0.9rem] font-semibold lg:text-[1rem]">
                 Category
@@ -196,7 +201,7 @@ export function RegistrationForm({ categoriesData }) {
             <Fade direction="up" duration={2000} triggerOnce={true}>
               <select
                 name="category"
-                className="mt-1 mb-3 w-[100%] lg:mt-2 lg:mb-5 px-2 py-2 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md"
+                className="mt-1 mb-3 w-[100%] lg:mt-2 lg:mb-5 md:py-4 px-2 py-2 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md"
               >
                 <option
                   value="Select Your Category"
@@ -216,7 +221,7 @@ export function RegistrationForm({ categoriesData }) {
               </select>
             </Fade>
           </div>
-          <div className="lg:w-[47%]">
+          <div className="lg:w-[47%] md:w-[50%]">
             <Fade direction="up" duration={2000} triggerOnce={true}>
               <label className="text-[0.9rem] font-semibold lg:text-[1rem]">
                 Group Size
@@ -225,7 +230,7 @@ export function RegistrationForm({ categoriesData }) {
             <Fade direction="up" duration={2000} triggerOnce={true}>
               <select
                 name="group_size"
-                className="mt-1 mb-3 w-[100%] lg:mt-2 lg:mb-5 px-2 py-2 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md "
+                className="mt-1 mb-3 w-[100%] lg:mt-2 lg:mb-5 md:py-4 px-2 py-2 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md "
               >
                 <option
                   value="Select"
@@ -247,12 +252,12 @@ export function RegistrationForm({ categoriesData }) {
           </div>
         </div>
         <Fade direction="up" duration={2000} triggerOnce={true}>
-          <p className="text-pink opacity-80 text-[0.8rem] mb-4 lg:text-[0.9rem] lg:mb-5 ">
+          <p className="text-pink opacity-80 text-[0.8rem] mb-4 md:text-[0.9rem] md:mb-5 ">
             Please review your registration details before submitting
           </p>
         </Fade>
         <Fade direction="up" duration={2000} triggerOnce={true}>
-          <div className="flex lg:gap-2 gap-2">
+          <div className="flex gap-2">
             <input
               type="checkbox"
               id="privacy_policy_accepted"
@@ -261,7 +266,7 @@ export function RegistrationForm({ categoriesData }) {
               required
             />
             <label
-              className="text-[0.75rem] lg:text-[0.9rem]"
+              className="text-[0.75rem] md:text-[0.9rem]"
               htmlFor="privacy_policy_accepted"
             >
               I agree with the event&apos;s terms and conditions and privacy

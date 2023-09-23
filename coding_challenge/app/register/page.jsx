@@ -11,7 +11,7 @@ async function Register() {
   const categories = await categoriesData;
 
   return (
-    <main>
+    <main className="md:w-[80%] lg md:absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:w-full">
       <div className="lg:flex lg:items-center gap-[2%] lg:mx-[11%] relative">
         <Image
           src="/Purple-Lens-Flare-PNG.png"
@@ -65,10 +65,10 @@ async function Register() {
         <div className="lg:w-[40%] px-12 lg:px-0 h-[40vh] lg:h-auto lg:pt-[7%] ">
           <Link href="/">
             <Image
-              className="lg:hidden pt-5"
+              className="lg:hidden md:inline-block md:pt-20 pt-5"
               src="/back-btn.png"
-              width={20}
-              height={20}
+              width={25}
+              height={25}
               alt=""
             />
           </Link>

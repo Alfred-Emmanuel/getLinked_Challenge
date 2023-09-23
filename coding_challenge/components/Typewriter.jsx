@@ -15,7 +15,7 @@ const Typewriter = () => {
       typed.destroy(); // Clean up Typed.js on component unmount
     };
   }, []);
-  return <span ref={typedElementRef}></span>;
+  return <span className="" ref={typedElementRef}></span>;
 };
 
 export default Typewriter;

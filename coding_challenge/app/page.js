@@ -73,14 +73,14 @@ export default function Home() {
                   className=" absolute top-[35%] left-[80%] w-[3%] lg:w-[1%] lg:top-[77%] lg:left-[30%] lg:z-[10] lg:opacity-90 blink-animation"
                 />
                 <div className=" lg:text-right lg:pr-[15%] lg:mt-0">
-                  <h2 className="lg:text-3xl lg:relative italic font-medium w-auto ">
+                  <h2 className="lg:text-3xl lg:relative md:text-2xl italic font-medium w-auto ">
                     <Typewriter />
                     <Image
                       width={50}
                       height={50}
                       src="/curved-arch.png"
                       alt="Curved Arch"
-                      className="absolute w-24 left-[73%] lg:left-1/2 transform -translate-x-1/2 lg:w-44 lg:h-3 lg:ml-[42%]"
+                      className="absolute w-24 left-[73%] lg:left-1/2 transform -translate-x-1/2 lg:w-44 lg:h-3 md:-ml-20 md:w-32 lg:ml-[42%]"
                     />
                   </h2>
                 </div>
@@ -96,7 +96,7 @@ export default function Home() {
                       />
                     </Fade>
                     <Fade direction="up" duration={2000} triggerOnce={true}>
-                      <p className="text-[0.7rem] w-[60%] text-center mx-auto pt-1 mb-6 lg:pt-0 lg:mx-0 lg:text-left lg:text-[1rem] lg:mb-10 lg:mt-5 lg:w-[60%]">
+                      <p className="text-[0.7rem] w-[60%] text-center mx-auto pt-1 mb-6 lg:pt-0 md:text-[1.4rem] md:mt-5 md:mb-10 lg:mx-0 lg:text-left lg:text-[1rem] lg:mb-10 lg:mt-5 lg:w-[60%]">
                         Participate in getLinked Tech Hackathon 2023 and stand a
                         chance to win a big prize
                       </p>
@@ -104,7 +104,7 @@ export default function Home() {
                     <Fade direction="up" duration={2000} triggerOnce={true}>
                       <Link
                         href="/register"
-                        className="bg-gradient-to-r from-pink via-primary-color to-secondary-color px-8 py-3 lg:px-12 lg:py-3 rounded-lg "
+                        className="bg-gradient-to-r from-pink via-primary-color to-secondary-color px-8 py-3 md:px-16 md:py-4 lg:px-12 lg:py-3 rounded-lg "
                       >
                         Register
                       </Link>
@@ -114,7 +114,7 @@ export default function Home() {
                     </Fade>
                   </div>
                   <Fade direction="up" duration={2000} triggerOnce={true}>
-                    <div className="relative p-7 lg:p-0 lg:ml-[5%]">
+                    <div className="relative p-7 lg:p-0 lg:ml-[5%] md:mt-20 lg:mt-0">
                       <Image
                         src="/man-wearing-smart-glasses.png"
                         alt="man wearing smart glasses"
@@ -163,14 +163,14 @@ export default function Home() {
                         width={500}
                         height={500}
                         alt="the big idea"
-                        className="mx-auto lg:mx-0 "
+                        className="mx-auto lg:mx-0 md:mt-10 lg:mt-0 "
                       />
                     </Fade>
                   </div>
                   <div className=" lg:w-[50%] flex items-center">
                     <div>
                       <Fade direction="up" duration={2000} triggerOnce={true}>
-                        <h1 className=" text-[1.2rem] mb-4 font-bold lg:text-3xl lg:mb-3">
+                        <h1 className=" text-[1.2rem] mb-4 font-bold md:text-3xl lg:mb-3">
                           Introduction to getlinked <br />{" "}
                           <span className="text-primary-color">
                             tech Hackathon 1.0
@@ -178,7 +178,7 @@ export default function Home() {
                         </h1>
                       </Fade>
                       <Fade direction="up" duration={2000} triggerOnce={true}>
-                        <p className=" w-[85%] text-left text-[0.8rem] lg:text-[1rem] mx-auto lg:mx-0 lg:w-[80%]">
+                        <p className=" w-[85%] text-left text-[0.8rem] md:leading-7 md:text-[1.2rem] mx-auto lg:mx-0 lg:w-[80%]">
                           Our tech hackathon is a meeting point of visionaries,
                           and it&apos;s purpose is as clear as day: to shape the
                           future. Whether you&apos;re a coding genius, a design
@@ -226,13 +226,13 @@ export default function Home() {
                   <div className="order-2 lg:order-1 lg:w-[50%] flex items-center">
                     <div>
                       <Fade direction="up" duration={2000} triggerOnce={true}>
-                        <h1 className="text-[1.2rem] mb-4 font-bold lg:text-3xl lg:mb-3">
+                        <h1 className="text-[1.2rem] mb-4 font-bold md:text-3xl lg:mb-3">
                           Rules and <br />{" "}
                           <span className="text-primary-color">Guidelines</span>
                         </h1>
                       </Fade>
                       <Fade direction="up" duration={2000} triggerOnce={true}>
-                        <p className="w-[85%] text-left text-[0.8rem] lg:text-[1rem] mx-auto lg:mx-0 lg:w-[80%]">
+                        <p className="w-[85%] text-left text-[0.8rem] md:text-[1.2rem] mx-auto lg:mx-0 lg:w-[80%]">
                           Our tech hackathon is a melting pot of visionaries,
                           and its purpose is as clear as day: to shape the
                           future. Whether you&apos;re a coding genius, a design
@@ -295,11 +295,11 @@ export default function Home() {
                   className=" absolute top-[99%] left-[90%] w-[4%] lg:w-[1%] lg:top-[81%] lg:left-[38%] lg:z-[10] lg:opacity-90 blink-animation"
                 />
                 <div className="lg:flex lg:gap-[5%]">
-                  <div className=" p-10 lg:p-0 lg:w-[45%] flex items-center ">
+                  <div className=" p-10 lg:p-0 lg:w-[45%] flex items-center md:justify-center lg:justify-normal ">
                     <Fade direction="up" duration={2000} triggerOnce={true}>
                       <Image
                         src="/man-and-woman.png"
-                        width={500}
+                        width={600}
                         height={100}
                         alt="man and woman"
                         className="mx-auto lg:mx-0 "
@@ -309,7 +309,7 @@ export default function Home() {
                   <div className=" lg:w-[50%] flex items-center">
                     <div>
                       <Fade direction="up" duration={2000} triggerOnce={true}>
-                        <h1 className=" text-[1.2rem] mb-4 font-bold lg:text-3xl lg:mb-3">
+                        <h1 className=" text-[1.2rem] mb-4 font-bold md:text-3xl lg:mb-3">
                           Judging Criteria <br />{" "}
                           <span className="text-primary-color">
                             Key Attributes
@@ -319,8 +319,8 @@ export default function Home() {
 
                       <div>
                         <Fade direction="up" duration={2000} triggerOnce={true}>
-                          <p className=" w-[85%] text-left text-[0.8rem] lg:text-[1rem] font-medium mx-auto lg:mx-0 lg:w-[80%] mt-5">
-                            <span className="text-pink font-semibold text-[1rem]">
+                          <p className=" w-[85%] text-left text-[0.8rem] md:text-[1.2rem] md:font-normal lg:font-medium font-medium mx-auto lg:mx-0 lg:w-[80%] mt-5">
+                            <span className="text-pink font-semibold text-[1rem] md:text-[1.2rem] ">
                               Innovation and Creativity:
                             </span>{" "}
                             Evaluate the uniqueness and creativity of the
@@ -330,8 +330,8 @@ export default function Home() {
                           </p>
                         </Fade>
                         <Fade direction="up" duration={2000} triggerOnce={true}>
-                          <p className=" w-[85%] text-left text-[0.8rem] lg:text-[1rem] font-medium mx-auto lg:mx-0 lg:w-[80%] mt-5">
-                            <span className="text-pink font-semibold text-[1rem]">
+                          <p className=" w-[85%] text-left text-[0.8rem] md:text-[1.2rem] md:font-normal lg:font-medium font-medium mx-auto lg:mx-0 lg:w-[80%] mt-5">
+                            <span className="text-pink font-semibold text-[1rem] md:text-[1.2rem]">
                               Functionality:{" "}
                             </span>{" "}
                             Assess how well the solution works. Does it perform
@@ -341,8 +341,8 @@ export default function Home() {
                           </p>
                         </Fade>
                         <Fade direction="up" duration={2000} triggerOnce={true}>
-                          <p className=" w-[85%] text-left text-[0.8rem] lg:text-[1rem] font-medium mx-auto lg:mx-0 lg:w-[80%] mt-5">
-                            <span className="text-pink font-semibold text-[1rem]">
+                          <p className=" w-[85%] text-left text-[0.8rem] md:text-[1.2rem] md:font-normal lg:font-medium font-medium mx-auto lg:mx-0 lg:w-[80%] mt-5">
+                            <span className="text-pink font-semibold text-[1rem] md:text-[1.2rem] ">
                               Impact and Relevance:{" "}
                             </span>{" "}
                             Determine the potential impact of the solution in
@@ -353,8 +353,8 @@ export default function Home() {
                           </p>
                         </Fade>
                         <Fade direction="up" duration={2000} triggerOnce={true}>
-                          <p className=" w-[85%] text-left text-[0.8rem] lg:text-[1rem] font-medium mx-auto lg:mx-0 lg:w-[80%] mt-5">
-                            <span className="text-pink font-semibold text-[1rem]">
+                          <p className=" w-[85%] text-left text-[0.8rem] md:text-[1.2rem] md:font-normal lg:font-medium font-medium mx-auto lg:mx-0 lg:w-[80%] mt-5">
+                            <span className="text-pink font-semibold text-[1rem] md:text-[1.2rem] ">
                               {" "}
                               Technical Complexity:
                             </span>{" "}
@@ -365,8 +365,8 @@ export default function Home() {
                           </p>
                         </Fade>
                         <Fade direction="up" duration={2000} triggerOnce={true}>
-                          <p className=" w-[85%] text-left text-[0.8rem] lg:text-[1rem] font-medium mx-auto lg:mx-0 lg:w-[80%] mt-5 mb-10 lg:mb-5">
-                            <span className="text-pink font-semibold text-[1rem]">
+                          <p className=" w-[85%] text-left text-[0.8rem] md:text-[1.2rem] md:font-normal lg:font-medium font-medium mx-auto lg:mx-0 lg:w-[80%] mt-5 mb-10 lg:mb-8">
+                            <span className="text-pink font-semibold text-[1rem] md:text-[1.2rem]">
                               {" "}
                               Adherence to Hackathon Rules:{" "}
                             </span>{" "}
@@ -453,13 +453,13 @@ export default function Home() {
                   <div className=" lg:w-[50%] flex items-center">
                     <div>
                       <Fade duration={2000} direction="up" triggerOnce={true}>
-                        <h1 className="text-[1.2rem] mb-4 font-bold lg:text-3xl lg:mb-5">
+                        <h1 className="text-[1.2rem] mb-4 font-bold md:text-3xl lg:mb-5">
                           Frequently Asked <br />{" "}
                           <span className="text-primary-color">Questions</span>
                         </h1>
                       </Fade>
                       <Fade duration={2000} direction="up" triggerOnce={true}>
-                        <p className="w-[80%] mb-5 mx-auto text-[0.78rem] lg:text-[1rem] font-normal lg:font-semibold lg:mb-0 lg:mx-0 lg:w-[60%]">
+                        <p className="w-[80%] mb-5 mx-auto text-[0.78rem] md:text-[1.2rem] font-normal lg:font-semibold lg:mb-0 lg:mx-0 lg:w-[60%]">
                           We&apos;ve got answers to the questions that you might
                           want to ask about{" "}
                           <span className="font-bold">
@@ -470,7 +470,7 @@ export default function Home() {
                       <FAQs />
                     </div>
                   </div>
-                  <div className="p-10 lg:p-0 lg:w-[48%]">
+                  <div className="p-10 lg:p-0  lg:w-[48%]">
                     <Fade duration={2000} direction="up" triggerOnce={true}>
                       <Image
                         src="/man-thinking.png"
@@ -512,7 +512,7 @@ export default function Home() {
                   />
                 </div>
               </section>
-              <section className="mt-28 mb-16 lg:mt-28 lg:mb-20 relative">
+              <section className="mt-16 mb-16 lg:mt-28 lg:mb-20 relative">
                 <Image
                   src="/star(3).png"
                   alt="third star"
@@ -565,20 +565,20 @@ export default function Home() {
                 <div className="lg:flex justify-center lg:justify-end">
                   <div className="w-[100%] text-center lg:text-left lg:w-[45%] ">
                     <Fade duration={2000} direction="up" triggerOnce={true}>
-                      <h1 className="text-2xl lg:text-3xl font-bold">
+                      <h1 className="text-2xl md:text-3xl font-bold">
                         Prizes and <br />{" "}
                         <span className="text-primary-color">Rewards</span>
                       </h1>
                     </Fade>
                     <Fade duration={2000} direction="up" triggerOnce={true}>
-                      <p className="w-[50%] text-[0.8rem] mx-auto mt-1 mb-3 lg:mb-0 lg:mx-0 lg:text-[1.1rem] lg:w-[50%] lg:mt-5">
+                      <p className="w-[50%] text-[0.8rem] mx-auto mt-1 mb-3 lg:mb-0 lg:mx-0 md:text-[1.2rem] lg:w-[50%] lg:mt-5">
                         Highlight of the prizes for winner and runner-ups
                       </p>
                     </Fade>
                   </div>
                 </div>
                 <div className=" lg:flex lg:w-[92%] lg:pr-[10%] lg:justify-between">
-                  <div className="p-5 w-[80%] mx-auto lg:mx-0 lg:w-auto lg:p-0">
+                  <div className="p-5 w-[80%] mx-auto md:w-[60%] lg:mx-0 lg:w-auto lg:p-0">
                     <Fade duration={2000} direction="up" triggerOnce={true}>
                       <Image
                         src="/cup.png"
@@ -589,7 +589,7 @@ export default function Home() {
                       />
                     </Fade>
                   </div>
-                  <div className="p-5 w-[80%] mx-auto lg:mx-0 lg:w-auto lg:pt-[12%] lg:p-0">
+                  <div className="p-5 w-[80%] mx-auto md:w-[60%] lg:mx-0 lg:w-auto lg:pt-[12%] lg:p-0">
                     <Fade duration={2000} direction="up" triggerOnce={true}>
                       <Image
                         src="/rewards.png"
@@ -640,12 +640,12 @@ export default function Home() {
                 />
                 <div>
                   <Fade duration={2000} direction="up" triggerOnce={true}>
-                    <h1 className="text-2xl mb-2 lg:text-3xl font-bold lg:mb-3">
+                    <h1 className="text-2xl mb-2 md:text-3xl font-bold lg:mb-3">
                       Partners and Sponsors
                     </h1>
                   </Fade>
                   <Fade duration={2000} direction="up" triggerOnce={true}>
-                    <p className="text-[0.8rem] w-[73%] lg:text-[1.1rem] lg:w-[50%] mx-auto">
+                    <p className="text-[0.8rem] w-[73%] md:text-[1.2rem] lg:w-[50%] mx-auto">
                       Getlinked Hackathon 1.0 is honored to have the following
                       major companies as it&apos;s partners and sponsors
                     </p>
@@ -723,19 +723,19 @@ export default function Home() {
                 <div className=" lg:flex lg:justify-between lg:ml-[2%] lg:mr-[7%]">
                   <div className=" lg:w-[50%]">
                     <Fade duration={2000} direction="up" triggerOnce={true}>
-                      <h1 className="text-2xl lg:text-3xl lg:mb-5 font-bold">
+                      <h1 className="text-2xl md:text-3xl lg:mb-5 font-bold">
                         Privacy Policy and <br />{" "}
                         <span className="text-primary-color">Terms</span>
                       </h1>
                     </Fade>
 
                     <Fade duration={2000} direction="up" triggerOnce={true}>
-                      <p className="opacity-70 text-[0.7rem] mt-1 mb-3 lg:mt-0 lg:mb-4 lg:text-[0.9rem]">
+                      <p className="opacity-70 text-[0.7rem] mt-1 mb-3 lg:mt-0 lg:mb-4 md:text-[0.9rem]">
                         Last updated on September 12, 2023
                       </p>
                     </Fade>
                     <Fade duration={2000} direction="up" triggerOnce={true}>
-                      <p className="opacity-90 text-[0.8rem] w-[85%] mb-5 mx-auto font-semibold lg:mx-0 lg:text-[1rem] lg:mb-7 lg:w-[70%]">
+                      <p className="opacity-90 text-[0.8rem] w-[85%] mb-5 mx-auto font-semibold lg:mx-0 md:text-[1rem] lg:mb-7 md:w-[70%]">
                         Below are our privacy & policy, which outline a lot of
                         goodies. it&apos;s our aim to always take of our
                         participant
@@ -743,7 +743,7 @@ export default function Home() {
                     </Fade>
                     <Fade duration={2000} direction="up" triggerOnce={true}>
                       <div className="px-5 py-10 text-left w-[85%] mx-auto bg-white bg-opacity-5 border-primary-color border-opacity-40 lg:mx-0 lg:p-12 lg:w-[80%] border-2">
-                        <p className="text-[0.8rem] leading-7 lg:text-[1rem] lg:leading-8">
+                        <p className="text-[0.8rem] leading-7 md:text-[1rem] md:leading-8">
                           At getlinked tech Hackathon 1.0, we value your privacy
                           and are committed to protecting your personal
                           information. This Privacy Policy outlines how we
@@ -752,35 +752,35 @@ export default function Home() {
                           participating in our event, you consent to the
                           practices described in this policy.
                         </p>
-                        <h2 className="text-primary-color font-bold mt-3 lg:mt-4 lg:text-xl ">
+                        <h2 className="text-primary-color font-bold mt-3 md:mt-4 md:text-xl ">
                           Licensing Policy
                         </h2>
-                        <h4 className="text-[0.9rem] lg:text-[1rem] mt-4 font-semibold">
+                        <h4 className="text-[0.9rem] md:text-[1rem] mt-4 font-semibold">
                           Here are terms of our Standard License:
                         </h4>
-                        <div className="mt-3 mb-8 lg:mt-4 lg:mb-7">
-                          <div className=" flex justify-center gap-2 lg:pl-3 lg:mb-3">
+                        <div className="mt-3 mb-8 md:mt-4 md:mb-7">
+                          <div className=" flex justify-center gap-2 md:pl-3 md:mb-3">
                             <Image
                               src="/list terms.png"
                               width={0}
                               height={0}
                               alt=""
-                              className="w-[10%] h-[6%] pt-2 lg:w-[5%] lg:pt-2 lg:h-[3%]"
+                              className="w-[10%] h-[6%] pt-2 md:w-[5%] md:pt-2 md:h-[3%]"
                             />
-                            <p className="text-[0.8rem] leading-6 lg:text-[1rem] lg:leading-7">
+                            <p className="text-[0.8rem] leading-6 md:text-[1rem] md:leading-7">
                               The Standard License grants you a non-exclusive
                               right to navigate and register for our event
                             </p>
                           </div>
-                          <div className=" flex justify-center gap-2 lg:pl-3 lg:mb-3">
+                          <div className=" flex justify-center gap-2 md:pl-3 md:mb-3">
                             <Image
                               src="/list terms.png"
                               width={0}
                               height={0}
                               alt=""
-                              className="w-[10%] h-[6%] pt-2 lg:w-[5%] lg:pt-2 lg:h-[3%]"
+                              className="w-[10%] h-[6%] pt-2 md:w-[5%] md:pt-2 md:h-[3%]"
                             />
-                            <p className="text-[0.8rem] leading-6 lg:text-[1rem] lg:leading-7">
+                            <p className="text-[0.8rem] leading-6 md:text-[1rem] md:leading-7">
                               You are licensed to use the item available at any
                               free source sites, for your project development
                             </p>
@@ -789,7 +789,7 @@ export default function Home() {
                         <div className="flex justify-center">
                           <Link
                             href="#"
-                            className="bg-gradient-to-r from-pink via-primary-color to-secondary-color px-8 py-3 lg:px-12 lg:py-3 rounded-lg"
+                            className="bg-gradient-to-r from-pink via-primary-color to-secondary-color px-8 py-3 md:px-12 md:py-3 rounded-lg"
                           >
                             Read More
                           </Link>
@@ -797,8 +797,8 @@ export default function Home() {
                       </div>
                     </Fade>
                   </div>
-                  <div className="lg:w-[50%]">
-                    <div className="relative p-14 lg:p-0">
+                  <div className="md:w-[50%] md:mx-auto lg:mx-0">
+                    <div className="relative p-14 md:p-0">
                       <Fade duration={2000} direction="up" triggerOnce={true}>
                         <Image
                           src="/Vector.png"

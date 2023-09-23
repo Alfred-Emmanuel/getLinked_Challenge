@@ -7,7 +7,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Contact = () => {
   return (
-    <main className="">
+    <main className="md:w-[80%] lg md:absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:w-full">
       <div className="lg:flex gap-[5%] lg:pt-10 lg:mx-[11%] relative">
         <Image
           src="/Purple-Lens-Flare-PNG.png"
@@ -124,11 +124,11 @@ const Contact = () => {
             </div>
           </Fade>
         </div>
-        <div className="py-7 px-10 shadow-lg lg:bg-white lg:bg-opacity-5 lg:border-primary-color lg:border-opacity-40 lg:w-[48%] lg:px-20 lg:py-9">
+        <div className="py-7 px-10 shadow-lg md:bg-white md:bg-opacity-5 md:border-primary-color lg:border-opacity-40 lg:w-[48%] lg:px-20 lg:py-9">
           <ContactForm />
           <div className="lg:hidden text-center mt-5">
             <Fade direction="up" duration={2000} triggerOnce={true}>
-              <p className="text-primary-color lg:text-[1.1rem] lg:mb-5">
+              <p className="text-primary-color md:text-[1.2rem] lg:mb-5">
                 Share on
               </p>
             </Fade>

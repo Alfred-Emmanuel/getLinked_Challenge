@@ -35,24 +35,24 @@ const Footer = () => {
       />
       <div className="block px-12 pb-5 lg:px-0 lg:pb-0 lg:flex lg:justify-between mx-auto lg:mb-12 ">
         <div className="lg:w-[30%] mb-7 lg:mb-0">
-          <h1 className=" text-2xl mb-5 lg:text-3xl lg:mb-5 font-bold">
+          <h1 className=" text-2xl mb-5 md:text-3xl md:mb-5 font-bold">
             get<span className="text-primary-color">linked</span>
           </h1>
-          <p className="text-[0.9rem] leading-6 w-[80%] mb-3 lg:w-[100%] lg:mb-10 lg:leading-7 lg:text-[0.9rem] font-medium">
+          <p className="text-[0.9rem] leading-6 w-[80%] mb-3 md:w-[100%] md:mb-10 md:leading-7 md:text-[0.9rem] font-medium">
             Getlinked Tech Hackathon is a technology innovation program
             established by a group of organizations with the aim of showcasing
             young and talented individuals in the field of technology
           </p>
-          <div className="flex gap-4 text-[0.9rem] lg:text-[1rem]">
+          <div className="flex gap-4 text-[0.9rem] md:text-[1rem]">
             <p className="border-r-4 border-pink pr-4">Terms of Use</p>
             <p className="">Privacy Policy</p>
           </div>
         </div>
         <div>
-          <h1 className="text-[1.1rem] mb-3 text-primary-color lg:text-[1.1rem] lg:mb-4">
+          <h1 className="text-[1.1rem] mb-3 text-primary-color md:text-[1.2rem] md:font-semibold md:mb-4">
             Useful Links
           </h1>
-          <div className="lg">
+          <div className="">
             <div className="mb-2 ">
               <Link href="/" className="hovered-link">
                 Overview
@@ -75,7 +75,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex items-center mb-10 lg:mb-0 lg:items-start gap-4">
-            <h3 className="text-[1.1rem] text-primary-color lg:text-[1.1rem]">
+            <h3 className="text-[1.1rem] text-primary-color md:text-[1.2rem] md:font-semibold ">
               Follow Us:
             </h3>
             <div className="flex items-center gap-5 ">
@@ -122,26 +122,26 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <h1 className="text-primary-color text-[1.1rem] mb-2 lg:mb-4">
+          <h1 className="text-primary-color text-[1.1rem] md:text-[1.2rem] font-semibold mb-2 md:mb-4">
             Contact Us
           </h1>
-          <div className="flex items-center gap-3 lg:mb-4">
+          <div className="flex items-center gap-3 md:mb-4">
             <Image
               src="/telephone.png"
               alt="telephone"
               width={0}
               height={0}
-              className="w-[5%] lg:w-[8%] lg:h-[5%]"
+              className="w-[5%] md:w-[3%] md:h-[2%] lg:w-[8%] lg:h-[5%]"
             />
             <Link href="tel:+23467981819">+234 679 81819</Link>
           </div>
-          <div className="flex items-center gap-3 mt-2 lg:mt-0">
+          <div className="flex items-center gap-3 mt-2 md:mt-0">
             <Image
               src="/location.png"
               alt="telephone"
               width={0}
               height={0}
-              className="w-[5%] -mt-[16%] lg:w-[8%] lg:h-[1%] lg:-mt-[30%]"
+              className="w-[5%] -mt-[16%] md:w-[3%] md:h-[2%] md:-mt-[5%] lg:w-[8%] lg:h-[1%] lg:-mt-[30%]"
             />
             <p>
               27, Alara Street <br /> Yaba 100012 <br /> Lagos State
@@ -149,7 +149,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <h5 className="mt-4 lg:mt-0 text-center text-[0.8rem] lg:text-[1rem]">
+      <h5 className="mt-4 lg:mt-0 text-center text-[0.8rem] md:text-[1.1rem]">
         All rights reserved. &copy; getlinked Ltd.
       </h5>
     </footer>

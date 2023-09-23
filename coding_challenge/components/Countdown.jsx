@@ -12,7 +12,7 @@ const MyCountdown = () => {
     };
 
     return (
-      <div className="flex gap-4 justify-center lg:justify-normal mt-5 mb-10 lg:mb-0 lg:mt-10">
+      <div className="flex gap-4 justify-center lg:justify-normal mt-5 mb-10 md:mt-10 lg:mb-0 lg:mt-10">
         <h1>
           <span className="text-4xl font-unica">{formatNumber(days)}</span>
           <span>D</span>

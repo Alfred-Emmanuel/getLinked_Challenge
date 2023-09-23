@@ -34,14 +34,14 @@ const ContactForm = () => {
           <Image
             className="lg:hidden pt-5 mb-5"
             src="/back-btn.png"
-            width={23}
-            height={23}
+            width={25}
+            height={25}
             alt=""
           />
         </Link>
         <div className="lg:mb-7">
           <Fade direction="up" duration={2000} triggerOnce={true}>
-            <legend className="text-primary-color text-[1.1rem] font-semibold">
+            <legend className="text-primary-color text-[1.1rem] md:text-[1.2rem] font-semibold">
               Questions or you need assistance?
             </legend>
           </Fade>
@@ -51,12 +51,17 @@ const ContactForm = () => {
             </legend>
           </Fade>
           <Fade direction="up" duration={2000} triggerOnce={true}>
-            <legend className="lg:hidden text-[0.9rem] w-[80%] mb-10">
+            <legend className="lg:hidden text-[0.9rem] w-[80%] md:text-[1rem] md:w-[65%] mb-10">
               Email us below about any questions related to our event
             </legend>
           </Fade>
         </div>
-        <Fade direction="up" duration={2000} triggerOnce={true} className="input-group">
+        <Fade
+          direction="up"
+          duration={2000}
+          triggerOnce={true}
+          className="input-group"
+        >
           <div className="input-group">
             <input
               type="text"
@@ -64,7 +69,7 @@ const ContactForm = () => {
               id="First Name"
               name="first_name"
               required
-              className="w-[100%] px-3 py-3 mb-7 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
+              className="w-[100%] px-3 py-3 mb-7 md:py-4 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
             />
             <label htmlFor="First Name" className=" label-field">
               First Name
@@ -84,7 +89,7 @@ const ContactForm = () => {
               id="Email"
               name="email"
               required
-              className="w-[100%] px-3 py-3 mb-7 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
+              className="w-[100%] px-3 py-3 mb-7 md:py-4 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
             />
             <label htmlFor="Email" className="label-field">
               Email
@@ -104,7 +109,7 @@ const ContactForm = () => {
               id="Phone Number"
               name="phone_number"
               required
-              className="w-[100%] px-3 py-3 mb-7 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
+              className="w-[100%] px-3 py-3 mb-7 md:py-4 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
             />
             <label htmlFor="Phone Number" className="label-field">
               Phone Number
@@ -123,7 +128,7 @@ const ContactForm = () => {
               id="message"
               name="message"
               required
-              className="w-[100%] px-3 py-3 mb-5 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
+              className="w-[100%] px-3 py-3 mb-5 md:py-4 lg:px-3 lg:py-2 bg-transparent border-white border-2 border-opacity-50 rounded-md input-field"
             />
             <label htmlFor="message" className="label-field">
               Message

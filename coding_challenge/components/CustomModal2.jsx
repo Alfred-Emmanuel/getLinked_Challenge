@@ -17,6 +17,7 @@ const CustomModal = ({ isOpen, closeModal }) => {
           <h2 className="text-xl lg:text-2xl mt-3 mb-3 font-semibold">
             Your message <br /> has been successfully sent.
           </h2>
+          <p>We will be in touch shortly.</p>
           <button
             className="bg-gradient-to-r from-pink via-primary-color to-secondary-color  lg:px-40 py-2 px-10 rounded-lg mt-4"
             onClick={closeModal}
