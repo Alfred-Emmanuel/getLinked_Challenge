@@ -1,10 +1,7 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 import RegistrationForm from "@/components/RegistrationForm";
 import getCategories from "@/components/getCategories";
-import { Fade } from "react-awesome-reveal";
-// import { revalidatePath } from "next/cache";
 
 async function Register() {
   const categoriesData = getCategories();
@@ -72,15 +69,11 @@ async function Register() {
               alt=""
             />
           </Link>
-          <Fade direction="up" duration={2000} triggerOnce={true}>
             <legend className=" lg:hidden text-xl pt-5 font-semibold text-primary-color">
               Register
             </legend>
-          </Fade>
           <div className="px-6 lg:px-0">
-            <Fade direction="up" duration={2000} triggerOnce={true}>
               <Image src="/man-in-chair.png" width={450} height={450} alt="" />
-            </Fade>
           </div>
         </div>
         <div className=" lg:w-[54%] relative lg:z-50 ">
