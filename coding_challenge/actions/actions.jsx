@@ -83,10 +83,22 @@ export async function submitForm(formData){
       }
     );
 
+    //   if (response.ok) {
+    //     return { success: true };
+    //   } else {
+    //     return { error: "Email already exists!" };
+    //   }
+    // } catch (error) {
+    //   return { error: "Server Error, Please try again later." };
+    // }
     if (response.ok) {
       return { success: true };
     } else {
-      return { error: "Email already exists!" };
+      if (response.status === 504) {
+        return { error: "Gateway Timeout Error, please try again later" };
+      } else {
+        return { error: "Email already exists!" };
+      }
     }
   } catch (error) {
     return { error: "Server Error, Please try again later." };
